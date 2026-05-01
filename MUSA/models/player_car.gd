@@ -1,6 +1,6 @@
 extends VehicleBody3D
 
-const MAX_STEER = 0.8
+const MAX_STEER = 0.34
 const ENGINE_POWER = 140
 
 # Check JIRA integration
