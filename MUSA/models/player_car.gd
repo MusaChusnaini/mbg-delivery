@@ -1,18 +1,21 @@
 extends VehicleBody3D
 
-const MAX_STEER = 0.34
-const ENGINE_POWER = 140
+const MAX_STEER = 0.8
+const ENGINE_POWER = 300
+
+@onready var cam_pivot =$CameraPivot
+@onready var camerea_3d =$CameraPivot/Camera3D
 
 # Check JIRA integration
 # RTO
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	# Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	steering = move_toward(steering, Input.get_axis("ui_right","ui_left") * MAX_STEER, delta * 2.5)
 	engine_force = Input.get_axis("ui_down","ui_up") * ENGINE_POWER
+	cam_pivot.global_position = cam_pivot.global_position.lerp(global_position, delta * 20)
+	cam_pivot.transform = cam_pivot.transform.interpolate_with(transform, delta * 5.0)

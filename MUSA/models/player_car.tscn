@@ -82,6 +82,8 @@ shadow_mesh = SubResource("ArrayMesh_sbns3")
 
 [node name="car_sedan" type="VehicleBody3D" unique_id=527359970]
 gravity_scale = 4.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, 0.29171997, 0.16045845)
 script = ExtResource("1_2yhcx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1901250783]
@@ -96,10 +98,9 @@ mesh = SubResource("ArrayMesh_vnpwy")
 [node name="Front Left Wheel" type="VehicleWheel3D" parent="." unique_id=756614073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59755397, 0.011257468, 0.7496772)
 use_as_steering = true
-wheel_roll_influence = 0.01
 wheel_radius = 0.25
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.4
+wheel_rest_length = 0.02
+wheel_friction_slip = 0.7
 suspension_stiffness = 120.0
 
 [node name="car_sedan_wheel_front_left" type="MeshInstance3D" parent="Front Left Wheel" unique_id=1329055196]
@@ -109,10 +110,9 @@ mesh = SubResource("ArrayMesh_xll6n")
 [node name="Front Left Wheel2" type="VehicleWheel3D" parent="." unique_id=1674198685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.602446, 0.011257468, 0.7496772)
 use_as_steering = true
-wheel_roll_influence = 0.01
 wheel_radius = 0.25
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.4
+wheel_rest_length = 0.02
+wheel_friction_slip = 0.7
 suspension_stiffness = 120.0
 
 [node name="car_sedan_wheel_front_left" type="MeshInstance3D" parent="Front Left Wheel2" unique_id=1494667558]
@@ -124,10 +124,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59755397, 0.011257468, -0.7
 use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_radius = 0.25
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.1
+wheel_rest_length = 0.02
+wheel_friction_slip = 0.7
 suspension_travel = 0.15
-suspension_stiffness = 120.0
+suspension_stiffness = 100.0
 
 [node name="car_sedan_wheel_front_left" type="MeshInstance3D" parent="Back Left Wheel" unique_id=331455216]
 transform = Transform3D(300, 0, 0, 0, -1.3113417e-05, 300, 0, -300, -1.3113417e-05, 0, 0, 0)
@@ -138,11 +138,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.602446, 0.011257468, -0.75
 use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_radius = 0.25
-wheel_rest_length = 0.2
-wheel_friction_slip = 1.1
+wheel_rest_length = 0.02
+wheel_friction_slip = 0.7
 suspension_travel = 0.15
-suspension_stiffness = 120.0
+suspension_stiffness = 100.0
 
 [node name="car_sedan_wheel_front_left" type="MeshInstance3D" parent="Back Right Wheel" unique_id=373718087]
 transform = Transform3D(-300, 2.6226833e-05, 1.1464113e-12, 0, -1.3113417e-05, 300, 2.6226833e-05, 300, 1.3113417e-05, 0, 0, 0)
 mesh = SubResource("ArrayMesh_xll6n")
+
+[node name="CenterOfMass" type="Node3D" parent="." unique_id=1047711399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29171997, 0.16045845)
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=573803210]
+top_level = true
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1423806744]
+transform = Transform3D(-1, 4.371139e-08, -7.5710346e-08, 0, 0.8660254, 0.5, 8.742278e-08, 0.5, -0.8660254, 0, 1.8269988, -2.5996623)

@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="MBG_Delivery"
-run/main_scene="res://MUSA/game.tscn"
+run/main_scene="uid://jel6psy4en5i"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/road-generator/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
 [physics]
 
