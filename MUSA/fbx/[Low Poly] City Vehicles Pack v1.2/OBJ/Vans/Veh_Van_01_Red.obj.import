@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4edlihh6wghy"
+path="res://.godot/imported/Veh_Van_01_Red.obj-c98319680972bc48e6eba0eee7c5b06d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_Van_01_Red.obj-c98319680972bc48e6eba0eee7c5b06d.mesh"]
+
+source_file="res://MUSA/fbx/[Low Poly] City Vehicles Pack v1.2/OBJ/Vans/Veh_Van_01_Red.obj"
+dest_files=["res://.godot/imported/Veh_Van_01_Red.obj-c98319680972bc48e6eba0eee7c5b06d.mesh", "res://.godot/imported/Veh_Van_01_Red.obj-c98319680972bc48e6eba0eee7c5b06d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

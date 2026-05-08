@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brg7xrt144hgg"
+path="res://.godot/imported/Veh_News_Helicopter.obj-d4d236fde8cd243f49ecc293d75dc8bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_News_Helicopter.obj-d4d236fde8cd243f49ecc293d75dc8bb.mesh"]
+
+source_file="res://MUSA/fbx/[Low Poly] City Vehicles Pack v1.2/OBJ/Special/Veh_News_Helicopter.obj"
+dest_files=["res://.godot/imported/Veh_News_Helicopter.obj-d4d236fde8cd243f49ecc293d75dc8bb.mesh", "res://.godot/imported/Veh_News_Helicopter.obj-d4d236fde8cd243f49ecc293d75dc8bb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
