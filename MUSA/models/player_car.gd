@@ -16,6 +16,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	steering = move_toward(steering, Input.get_axis("ui_right","ui_left") * MAX_STEER, delta * 2.5)
-	engine_force = Input.get_axis("ui_down","ui_up") * ENGINE_POWER
+	engine_force = (Input.get_axis("ui_down","ui_up") * ENGINE_POWER) / 1
 	cam_pivot.global_position = cam_pivot.global_position.lerp(global_position, delta * 20)
 	cam_pivot.transform = cam_pivot.transform.interpolate_with(transform, delta * 5.0)
+
+func _input(event: InputEvent) -> void:
+	print(engine_force)
+	pass

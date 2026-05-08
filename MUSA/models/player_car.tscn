@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://im5nyhelqlox" path="res://MUSA/fbx/citybits_texture.png" id="1_qlnf6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7nrnl"]
-size = Vector3(1.1845703, 0.47460938, 2.472412)
+size = Vector3(1.1845703, 0.37548828, 2.472412)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ugseg"]
 resource_name = "citybits_texture"
@@ -87,7 +87,7 @@ center_of_mass = Vector3(0, 0.29171997, 0.16045845)
 script = ExtResource("1_2yhcx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1901250783]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21881104, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26837158, 0)
 shape = SubResource("BoxShape3D_7nrnl")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
@@ -98,8 +98,8 @@ mesh = SubResource("ArrayMesh_vnpwy")
 [node name="Front Left Wheel" type="VehicleWheel3D" parent="." unique_id=756614073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59755397, 0.011257468, 0.7496772)
 use_as_steering = true
-wheel_radius = 0.25
-wheel_rest_length = 0.02
+wheel_radius = 0.2
+wheel_rest_length = 0.2
 wheel_friction_slip = 0.7
 suspension_stiffness = 120.0
 
@@ -110,8 +110,8 @@ mesh = SubResource("ArrayMesh_xll6n")
 [node name="Front Left Wheel2" type="VehicleWheel3D" parent="." unique_id=1674198685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.602446, 0.011257468, 0.7496772)
 use_as_steering = true
-wheel_radius = 0.25
-wheel_rest_length = 0.02
+wheel_radius = 0.2
+wheel_rest_length = 0.2
 wheel_friction_slip = 0.7
 suspension_stiffness = 120.0
 
@@ -122,9 +122,8 @@ mesh = SubResource("ArrayMesh_xll6n")
 [node name="Back Left Wheel" type="VehicleWheel3D" parent="." unique_id=684396484]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59755397, 0.011257468, -0.7503228)
 use_as_traction = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.25
-wheel_rest_length = 0.02
+wheel_radius = 0.2
+wheel_rest_length = 0.2
 wheel_friction_slip = 0.7
 suspension_travel = 0.15
 suspension_stiffness = 100.0
@@ -136,9 +135,8 @@ mesh = SubResource("ArrayMesh_xll6n")
 [node name="Back Right Wheel" type="VehicleWheel3D" parent="." unique_id=832528066]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.602446, 0.011257468, -0.7503228)
 use_as_traction = true
-wheel_roll_influence = 0.01
-wheel_radius = 0.25
-wheel_rest_length = 0.02
+wheel_radius = 0.2
+wheel_rest_length = 0.2
 wheel_friction_slip = 0.7
 suspension_travel = 0.15
 suspension_stiffness = 100.0
