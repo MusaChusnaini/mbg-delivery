@@ -152,4 +152,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29171997, 0.16045845)
 top_level = true
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1423806744]
-transform = Transform3D(-1, 4.371139e-08, -7.5710346e-08, 0, 0.8660254, 0.5, 8.742278e-08, 0.5, -0.8660254, 0, 1.8269988, -2.5996623)
+transform = Transform3D(-1, 1.1410963e-08, -8.6674866e-08, 0, 0.9914449, 0.1305262, 8.742278e-08, 0.1305262, -0.9914449, 0, 1.567, -4.234)

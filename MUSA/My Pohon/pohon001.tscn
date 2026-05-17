@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cwxtjheugqf0v"]
+
+[ext_resource type="PackedScene" uid="uid://ckfpt6cajqog8" path="res://MUSA/free-tree-3d-low-poly-pack/Fbx/Tree_temp_climate_001.FBX" id="1_r3tww"]
+[ext_resource type="Texture2D" uid="uid://dqd53xweo4y8j" path="res://MUSA/free-tree-3d-low-poly-pack/Textures/T_Trees_temp_climate.png" id="2_3g23s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3wd5"]
+albedo_texture = ExtResource("2_3g23s")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_r3tww"]
+points = PackedVector3Array(1.871213, 0.8415308, 3.921245, 1.6874442, 1.4419484, 3.9979708, 1.6852245, 1.5343726, 4.266768, 1.8543453, 0.84187055, 4.1962214, 1.7700067, 0.14936864, 4.469138, 1.8197222, 0.34882832, 3.438749, 1.7660117, 0.34916806, 3.2471926, 0.7774775, 0.04980874, 0, 0.39174056, 0.6237223, 0, 1.5169916, 1.5343726, 3.8635721, 0.8888929, 1.8072278, 4.599417, 1.0429213, 0.84187055, 4.967082, 0.9581392, -0.5444925, 4.765227, 0.55509067, -1.2713138, 4.594268, 0.6105764, -1.3946593, 4.181803, 1.7318325, 0.016508818, 3.438749, 0.38552618, -0.5740547, 0, -0.31004333, 0.5363951, 0, 0.72066, 1.8072278, 4.1962214, -0.08454919, 1.5941765, 4.737935, 0.10676551, 1.5343726, 4.925887, 0.21818113, 0.84187055, 5.198289, -0.058803797, -0.12960291, 5.2605963, -0.2878492, -1.5747505, 4.9469995, -0.30516076, -1.6641166, 4.175624, -0.40547895, -0.6416738, 0, -0.7153114, -0.105137706, 0, -2.428268, 0.5792091, 3.7065165, -2.4926314, 0.6162467, 3.921245, -2.428268, 0.5792091, 4.2008557, -2.4287117, 0.14902878, 4.520117, -0.58170176, 0.7596402, 5.0525618, -1.1738458, -0.9376352, 5.1442204, -2.4926314, -0.3192085, 3.921245, -2.428268, -0.28149128, 3.530408, -2.5854034, 0.14902878, 3.7065165, -2.6635275, 0.14868903, 3.921245, -2.5854034, 0.14902878, 4.2008557, -2.428268, -0.28149128, 4.2523494)
+
+[node name="Tree_temp_climate_001" unique_id=1608738561 instance=ExtResource("1_r3tww")]
+
+[node name="Tree_temp_climate_001" parent="." index="0" unique_id=1147314736]
+material_override = SubResource("StandardMaterial3D_f3wd5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tree_temp_climate_001" index="0" unique_id=504103856]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tree_temp_climate_001/StaticBody3D" index="0" unique_id=239231041]
+shape = SubResource("ConvexPolygonShape3D_r3tww")
