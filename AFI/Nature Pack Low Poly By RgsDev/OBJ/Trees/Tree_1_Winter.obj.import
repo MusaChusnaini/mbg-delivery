@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dynfi4m0q22j0"
+path="res://.godot/imported/Tree_1_Winter.obj-d305e4c21b0a04887afa97a3906fb8cd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Tree_1_Winter.obj-d305e4c21b0a04887afa97a3906fb8cd.mesh"]
+
+source_file="res://AFI/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Winter.obj"
+dest_files=["res://.godot/imported/Tree_1_Winter.obj-d305e4c21b0a04887afa97a3906fb8cd.mesh", "res://.godot/imported/Tree_1_Winter.obj-d305e4c21b0a04887afa97a3906fb8cd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

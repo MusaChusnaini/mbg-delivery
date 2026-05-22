@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cwtx7j0flluie"]
+
+[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/O5NY920.jpg" id="1_ndle8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_15wb7"]
+albedo_texture = ExtResource("1_ndle8")
+uv1_scale = Vector3(166, 166, 166)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eoq84"]
+material = SubResource("StandardMaterial3D_15wb7")
+
+[node name="Tanah" type="StaticBody3D" unique_id=719617360]
+transform = Transform3D(3.0990744, 0, 0, 0, 1, 0, 0, 0, 3.0990744, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=73561000]
+transform = Transform3D(1666.792, 0, 0, 0, 1666.792, 0, 0, 0, 1000.075, 0, 0, 0)
+mesh = SubResource("PlaneMesh_eoq84")

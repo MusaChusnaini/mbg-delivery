@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xgtrmld4g2sv"
+path="res://.godot/imported/Oak_Tree_Summer.obj-f107ddc0f1e38b02d9c1fe76e3be8dbf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Oak_Tree_Summer.obj-f107ddc0f1e38b02d9c1fe76e3be8dbf.mesh"]
+
+source_file="res://AFI/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Summer.obj"
+dest_files=["res://.godot/imported/Oak_Tree_Summer.obj-f107ddc0f1e38b02d9c1fe76e3be8dbf.mesh", "res://.godot/imported/Oak_Tree_Summer.obj-f107ddc0f1e38b02d9c1fe76e3be8dbf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
