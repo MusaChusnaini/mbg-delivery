@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dk7ny8dp0mr5i"
+path="res://.godot/imported/Veh_Minivan_Yellow.obj-c522eec15bdd27cda76fe4d37d020dfc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_Minivan_Yellow.obj-c522eec15bdd27cda76fe4d37d020dfc.mesh"]
+
+source_file="res://AFI/[Low Poly] City Vehicles Pack v1.2/OBJ/Minivan/Veh_Minivan_Yellow.obj"
+dest_files=["res://.godot/imported/Veh_Minivan_Yellow.obj-c522eec15bdd27cda76fe4d37d020dfc.mesh", "res://.godot/imported/Veh_Minivan_Yellow.obj-c522eec15bdd27cda76fe4d37d020dfc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

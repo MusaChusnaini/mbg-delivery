@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csdk5u0rjmwwa"
+path="res://.godot/imported/Veh_Microcar_Red.obj-27c5b35750e411e8b40a31b0267d839e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_Microcar_Red.obj-27c5b35750e411e8b40a31b0267d839e.mesh"]
+
+source_file="res://AFI/[Low Poly] City Vehicles Pack v1.2/OBJ/Microcar/Veh_Microcar_Red.obj"
+dest_files=["res://.godot/imported/Veh_Microcar_Red.obj-27c5b35750e411e8b40a31b0267d839e.mesh", "res://.godot/imported/Veh_Microcar_Red.obj-27c5b35750e411e8b40a31b0267d839e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
