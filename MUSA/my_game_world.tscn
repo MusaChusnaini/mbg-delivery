@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dfggtpn3gyrn0" path="res://addons/road-generator/custom_containers/3way_2x2.tscn" id="9_8fs0n"]
 [ext_resource type="PackedScene" uid="uid://cwxtjheugqf0v" path="res://MUSA/My Pohon/pohon001.tscn" id="10_6v1lm"]
 [ext_resource type="Script" uid="uid://b32iafusokaee" path="res://MUSA/school_dest.gd" id="11_c52d1"]
+[ext_resource type="PackedScene" uid="uid://dqhkm1n3dvj0a" path="res://AINI/ui_ux___canvas_layer.tscn" id="14_6crwe"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s0wya"]
 panorama = ExtResource("1_bc4cd")
@@ -102,9 +103,6 @@ material = SubResource("StandardMaterial3D_bc4cd")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0t88x"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_0t88x"]
-font_size = 50
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_0t88x"]
 _surfaces = [{
 "aabb": AABB(0, 0, -1, 1, 1, 1),
@@ -122,7 +120,6 @@ _surfaces = [{
 data = PackedVector3Array(0, 0, 0, 0, 0, -1, 0, 1, -1, 0, 0, -1, 1, 0, -1, 0, 1, -1, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, -1, 1, 0, -1, 0, 1, -1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, -1, 0, 0, -1, 1, 0, -1, 1, 0, 0, 0, 1, 0)
 
 [node name="GameWorld" type="Node3D" unique_id=1275618224]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.8553219, 0)
 
 [node name="Game System" type="Node3D" parent="." unique_id=1040816297]
 script = ExtResource("1_0t88x")
@@ -282,8 +279,9 @@ prior_mag = 38.003803
 next_mag = 38.003803
 next_pt_init = NodePath("../RP_003")
 
-[node name="car_taxi" parent="." unique_id=1154887101 instance=ExtResource("9_0t88x")]
+[node name="car_taxi" parent="." unique_id=1154887101 node_paths=PackedStringArray("km_h_label") instance=ExtResource("9_0t88x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 265.32916, 0.11099328, -132.97763)
+km_h_label = NodePath("../UI_UX - CanvasLayer/CANVAS/Speedo-Panel/Speed-Label")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=113052902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7890688, 0, -0.83902323)
@@ -521,35 +519,7 @@ script = ExtResource("11_c52d1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Destinasi/Area3D" unique_id=1397662836]
 shape = SubResource("BoxShape3D_0t88x")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=160123971]
-
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=1311150727]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 1150.0
-offset_bottom = 650.0
-
-[node name="KM_H" type="Label" parent="CanvasLayer/Control" unique_id=554332810]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -123.0
-offset_right = 310.0
-grow_vertical = 0
-text = "200 KM/h"
-label_settings = SubResource("LabelSettings_0t88x")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Target" type="Label" parent="CanvasLayer/Control" unique_id=1906019540]
-layout_mode = 1
-offset_right = 310.0
-offset_bottom = 123.0
-text = "TARGET : 0 / 10"
-label_settings = SubResource("LabelSettings_0t88x")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="UI_UX - CanvasLayer" parent="." unique_id=1307330218 instance=ExtResource("14_6crwe")]
 
 [node name="CSGPolygon3D2" type="CSGPolygon3D" parent="." unique_id=1698393576]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 272.10406, 0, -125.38418)
@@ -567,3 +537,5 @@ physics_material_override = SubResource("PhysicsMaterial_0t88x")
 shape = SubResource("ConcavePolygonShape3D_rmf28")
 
 [connection signal="body_entered" from="Destinasi/Area3D" to="Destinasi/Area3D" method="_on_body_entered"]
+
+[editable path="UI_UX - CanvasLayer"]

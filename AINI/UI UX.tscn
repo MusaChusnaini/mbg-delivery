@@ -73,7 +73,7 @@ theme_override_font_sizes/font_size = 60
 text = "00"
 
 [node name="UntitledDesign(4)" type="Sprite2D" parent="CanvasLayer/Timer/Panel2" unique_id=1636510067]
-position = Vector2(935.375, 26.999996)
+position = Vector2(936, 26.999996)
 scale = Vector2(0.14830732, 0.20925923)
 texture = ExtResource("3_fy0cs")
 
@@ -105,10 +105,10 @@ theme_override_font_sizes/font_size = 250
 text = "1,250"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Timer/Panel2/UntitledDesign(4)/UntitledDesign(5)" unique_id=1893061936]
-offset_left = -722.124
-offset_top = -434.63416
-offset_right = 636.876
-offset_bottom = 443.41455
+offset_left = -735.9293
+offset_top = -435.48386
+offset_right = 623.0707
+offset_bottom = 442.56485
 theme_override_colors/font_color = Color(0.3137255, 0.6117647, 0.88235295, 1)
 theme_override_font_sizes/font_size = 400
 text = "________"

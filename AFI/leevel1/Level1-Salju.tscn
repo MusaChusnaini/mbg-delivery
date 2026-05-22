@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cml2dityrqduu" path="res://AFI/free-skybox-blue-desert/textures/blue_desert.jpg" id="1_2fp5a"]
 [ext_resource type="Script" uid="uid://bxp3i4cnonh8y" path="res://addons/road-generator/nodes/road_manager.gd" id="1_erjfn"]
+[ext_resource type="PackedScene" uid="uid://dqhkm1n3dvj0a" path="res://AINI/ui_ux___canvas_layer.tscn" id="2_bxidi"]
 [ext_resource type="Script" uid="uid://cph7euje06kel" path="res://addons/road-generator/nodes/road_container.gd" id="3_5uilo"]
 [ext_resource type="Script" uid="uid://difs1qg4mpcpw" path="res://addons/road-generator/nodes/road_point.gd" id="4_y0sw6"]
 [ext_resource type="PackedScene" uid="uid://fgvnbxmv64re" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_Low.fbx" id="8_uhk0w"]
@@ -66,10 +67,18 @@ _surfaces = [{
 [sub_resource type="BoxShape3D" id="BoxShape3D_a72hw"]
 size = Vector3(1, 0.2767891, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_rn16v"]
-font_size = 50
-
 [node name="level_1" type="Node3D" unique_id=713835211]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1495466125]
+transform = Transform3D(-0.8660254, -0.47275934, 0.16278408, 0, 0.32556814, 0.94551855, -0.50000006, 0.81884307, -0.28195027, 0, 0, 0)
+light_color = Color(0.64705884, 0.93333334, 0.9490196, 1)
+shadow_enabled = true
+
+[node name="MOBIL_MBG" parent="." unique_id=780432208 node_paths=PackedStringArray("km_h_label") instance=ExtResource("30_rn16v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.98938, 0.6089677, -1503.1168)
+km_h_label = NodePath("../UI_UX - CanvasLayer/CANVAS/Speedo-Panel/Speed-Label")
+
+[node name="UI_UX - CanvasLayer" parent="." unique_id=1307330218 instance=ExtResource("2_bxidi")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1452641508]
 environment = SubResource("Environment_ct2lf")
@@ -156,7 +165,7 @@ transform = Transform3D(-1.0319681, 0, 0.28274035, 0, 1.07, 0, -0.28274035, 0, -
 mesh = ExtResource("34_rgyn6")
 
 [node name="School" type="MeshInstance3D" parent="." unique_id=1242212984]
-transform = Transform3D(0.010838171, 0, -0.04881121, 0, 0.05, 0, 0.04881121, 0, 0.010838171, 104.41217, -3.2430134, -1513.2927)
+transform = Transform3D(0.004125481, 0, -0.009109358, 0, 0.01, 0, 0.009109358, 0, 0.004125481, 146.31892, -0.53678703, -1485.5121)
 material_override = SubResource("StandardMaterial3D_a72hw")
 mesh = ExtResource("20_q0wow")
 
@@ -282,35 +291,4 @@ prior_mag = 377.1272
 next_mag = 377.1272
 next_pt_init = NodePath("../RP_008")
 
-[node name="MOBIL_MBG" parent="." unique_id=780432208 instance=ExtResource("30_rn16v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.98938, 0.6089677, -1503.1168)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1303893159]
-
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=1038898999]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 1150.0
-offset_bottom = 650.0
-
-[node name="KM_H" type="Label" parent="CanvasLayer/Control" unique_id=813691202]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -123.0
-offset_right = 310.0
-grow_vertical = 0
-text = "200 KM/h"
-label_settings = SubResource("LabelSettings_rn16v")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Target" type="Label" parent="CanvasLayer/Control" unique_id=913219590]
-layout_mode = 1
-offset_right = 310.0
-offset_bottom = 123.0
-text = "TARGET : 0 / 10"
-label_settings = SubResource("LabelSettings_rn16v")
-horizontal_alignment = 1
-vertical_alignment = 1
+[editable path="UI_UX - CanvasLayer"]

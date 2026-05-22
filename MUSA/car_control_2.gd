@@ -4,8 +4,8 @@ var max_rpm = 4500
 var max_torque = 1500
 var turn_speed = 2
 var turn_amount = 0.1
-@onready var km_h_label : Label = $"../CanvasLayer/Control/KM_H"
-var speed_kmh = 0.0
+@export var km_h_label : Label
+var speed_kmh : int = 0
 @onready var cam_pivot = $CameraPivot
 
 
@@ -13,7 +13,7 @@ func _physics_process(delta: float) -> void:
 	# $CamArm.position = position
 	
 	speed_kmh = linear_velocity.length() * 3.6
-	km_h_label.text = str(round(speed_kmh), " km/h")
+	km_h_label.text = str(round(speed_kmh))
 	
 	
 	cam_pivot.global_position = cam_pivot.global_position.lerp(global_position, delta * 20)
