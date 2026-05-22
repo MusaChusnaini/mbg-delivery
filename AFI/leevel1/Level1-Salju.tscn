@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://bxp3i4cnonh8y" path="res://addons/road-generator/nodes/road_manager.gd" id="1_erjfn"]
 [ext_resource type="Script" uid="uid://cph7euje06kel" path="res://addons/road-generator/nodes/road_container.gd" id="3_5uilo"]
 [ext_resource type="Script" uid="uid://difs1qg4mpcpw" path="res://addons/road-generator/nodes/road_point.gd" id="4_y0sw6"]
-[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/models/player_car.tscn" id="6_thkl1"]
 [ext_resource type="PackedScene" uid="uid://fgvnbxmv64re" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_Low.fbx" id="8_uhk0w"]
 [ext_resource type="PackedScene" uid="uid://b5yjxnkqydlsg" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_8_Winter.fbx" id="8_yaro5"]
 [ext_resource type="PackedScene" uid="uid://bc75gxo647mn2" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_High.fbx" id="9_dmeog"]
@@ -27,6 +26,7 @@
 [ext_resource type="ArrayMesh" uid="uid://cm34qf7g1s78k" path="res://AFI/low-poly-school-building/source/School.obj" id="20_q0wow"]
 [ext_resource type="PackedScene" uid="uid://dm3nhftrj1v2k" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/Mountain Lowpoly.fbx" id="21_330q6"]
 [ext_resource type="Texture2D" uid="uid://chd10t8ytg727" path="res://AFI/Nature Pack Low Poly By RgsDev/OBJ/salju.png" id="27_oyijs"]
+[ext_resource type="PackedScene" uid="uid://buhja2ny2spbr" path="res://MUSA/mobil_mbg.tscn" id="30_rn16v"]
 [ext_resource type="PackedScene" uid="uid://c6l3328b0ffur" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/bangunan/fbx/10.fbx" id="32_a72hw"]
 [ext_resource type="PackedScene" uid="uid://ca3wb8mw033gc" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/bangunan/fbx/8.fbx" id="33_nf7ob"]
 [ext_resource type="ArrayMesh" uid="uid://b3mbxv6o3jau6" path="res://AFI/Nature Pack Low Poly By RgsDev/FBX/bangunan/vox/exports/12.obj" id="34_rgyn6"]
@@ -65,6 +65,9 @@ _surfaces = [{
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a72hw"]
 size = Vector3(1, 0.2767891, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rn16v"]
+font_size = 50
 
 [node name="level_1" type="Node3D" unique_id=713835211]
 
@@ -159,9 +162,6 @@ mesh = ExtResource("20_q0wow")
 
 [node name="Mountain Lowpoly" parent="." unique_id=266607260 instance=ExtResource("21_330q6")]
 transform = Transform3D(200.55, 0, 0, 0, 200.55, 0, 0, 0, 200.55, 499.79407, 0.48879164, -1522.9789)
-
-[node name="car_sedan" parent="." unique_id=527359970 instance=ExtResource("6_thkl1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4519.8906, 0.98789024, -1479.8116)
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1910260810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11835861, 0, -0.047343284)
@@ -281,3 +281,36 @@ lanes = Array[int]([2, 4, 4, 2])
 prior_mag = 377.1272
 next_mag = 377.1272
 next_pt_init = NodePath("../RP_008")
+
+[node name="MOBIL_MBG" parent="." unique_id=780432208 instance=ExtResource("30_rn16v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159.98938, 0.6089677, -1503.1168)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1303893159]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1038898999]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 650.0
+
+[node name="KM_H" type="Label" parent="CanvasLayer/Control" unique_id=813691202]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -123.0
+offset_right = 310.0
+grow_vertical = 0
+text = "200 KM/h"
+label_settings = SubResource("LabelSettings_rn16v")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Target" type="Label" parent="CanvasLayer/Control" unique_id=913219590]
+layout_mode = 1
+offset_right = 310.0
+offset_bottom = 123.0
+text = "TARGET : 0 / 10"
+label_settings = SubResource("LabelSettings_rn16v")
+horizontal_alignment = 1
+vertical_alignment = 1

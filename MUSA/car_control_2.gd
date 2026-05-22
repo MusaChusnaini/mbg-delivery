@@ -2,8 +2,8 @@ extends VehicleBody3D
 
 var max_rpm = 4500
 var max_torque = 1500
-var turn_speed = 3
-var turn_amount = 0.17
+var turn_speed = 2
+var turn_amount = 0.1
 @onready var km_h_label : Label = $"../CanvasLayer/Control/KM_H"
 var speed_kmh = 0.0
 @onready var cam_pivot = $CameraPivot
