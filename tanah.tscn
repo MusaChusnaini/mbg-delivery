@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d4nicf2tkbyp1"]
+
+[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/O5NY920.jpg" id="1_ajk2i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5uilo"]
+size = Vector3(7811.258, 0.17749023, 4290.7437)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f42na"]
+albedo_texture = ExtResource("1_ajk2i")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8y2g1"]
+material = SubResource("StandardMaterial3D_f42na")
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=749231843]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1526471173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 166.33081)
+shape = SubResource("BoxShape3D_5uilo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1081577189]
+transform = Transform3D(8000, 0, 0, 0, 8000, 0, 0, 0, 8000, 0, 0, 0)
+mesh = SubResource("PlaneMesh_8y2g1")

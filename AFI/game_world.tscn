@@ -6,6 +6,15 @@
 [ext_resource type="Material" uid="uid://dpashsuk5lr4x" path="res://addons/road-generator/resources/road_texture.material" id="3_mqlla"]
 [ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/models/player_car.tscn" id="4_hvlaq"]
 [ext_resource type="PackedScene" uid="uid://b63rq4jeigte2" path="res://addons/road-generator/custom_containers/4way_2x2.tscn" id="4_oo441"]
+[ext_resource type="Script" uid="uid://c0mi21wvn0ko0" path="res://addons/road-generator/nodes/road_lane.gd" id="5_0ankt"]
+
+[sub_resource type="Curve3D" id="Curve3D_0ankt"]
+bake_interval = 4.0
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.14358425, 8.115509, 50.754898, 0, 0, 0, 0, 0, 0, -17.818516, 9.903046, 68.79304, 0, 0, 0, 0, 0, 0, -26.989788, 11.578827, 84.282616, 0, 0, 0, 0, 0, 0, -36.304905, 14.371796, 108.99201, 0, 0, 0, 0, 0, 0, -25.423721, 17.499939, 132.71625, 0, 0, 0, 0, 0, 0, -8.345625, 21.186676, 159.88861, 0, 0, 0, 0, 0, 0, -3.6915488, 26.772614, 204.99197),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
 
 [node name="GameWorld" type="Node3D" unique_id=1275618224]
 
@@ -300,6 +309,10 @@ prior_mag = 8.0
 next_mag = 8.0
 next_pt_init = NodePath("../RP_009")
 
+[node name="Lane 001" type="Path3D" parent="RoadManager/Road_003/RP_010" unique_id=447120414]
+curve = SubResource("Curve3D_0ankt")
+script = ExtResource("5_0ankt")
+
 [node name="RP_011" type="Node3D" parent="RoadManager/Road_003" unique_id=689465387]
 transform = Transform3D(-0.9511073, 0, -0.30886057, 0, 1, 0, 0.30886057, 0, -0.9511073, -10.798431, 0.25, -161.43825)
 script = ExtResource("3_4lf6w")
@@ -385,6 +398,7 @@ metadata/_custom_type_script = "uid://bxp3i4cnonh8y"
 [node name="Road_001" type="Node3D" parent="RoadManager2" unique_id=1570442498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -831.93823, 0, -279.76376)
 script = ExtResource("2_0ankt")
+material_resource = ExtResource("3_mqlla")
 use_lowpoly_preview = true
 
 [node name="RP_001" type="Node3D" parent="RoadManager2/Road_001" unique_id=673291317]

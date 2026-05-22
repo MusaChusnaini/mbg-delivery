@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxyxn6vmc4t0n"
+path="res://.godot/imported/12.obj-4973c74d9e4f0a894181d72d1a0f3d22.mesh"
+
+[deps]
+
+files=["res://.godot/imported/12.obj-4973c74d9e4f0a894181d72d1a0f3d22.mesh"]
+
+source_file="res://AFI/Voxel Buildings/bangunan/obj/12.obj"
+dest_files=["res://.godot/imported/12.obj-4973c74d9e4f0a894181d72d1a0f3d22.mesh", "res://.godot/imported/12.obj-4973c74d9e4f0a894181d72d1a0f3d22.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
