@@ -1,13 +1,18 @@
 [gd_scene format=4 uid="uid://mk4p0or6ce7j"]
 
 [ext_resource type="Texture2D" uid="uid://dvmgr5n5svnuc" path="res://AFI/ASSETS/sky/skybox5.png" id="1_6nuj6"]
+[ext_resource type="PackedScene" uid="uid://buhja2ny2spbr" path="res://MUSA/mobil_mbg.tscn" id="2_gnohd"]
 [ext_resource type="PackedScene" uid="uid://dbsh6osxt0q06" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_Snow_LOD_Medium.fbx" id="2_rc6ub"]
 [ext_resource type="PackedScene" uid="uid://dbucyd80reqek" path="res://MUSA/ASSETS/fbx/building_F_withoutBase.fbx" id="3_hu355"]
+[ext_resource type="Texture2D" uid="uid://bil86tbw1hrlm" path="res://AINI/ASSETS/Untitled design.png" id="3_u10ni"]
+[ext_resource type="Texture2D" uid="uid://blm1caqajrgx5" path="res://AINI/ASSETS/Untitled design (8).png" id="4_61e4g"]
 [ext_resource type="Texture2D" uid="uid://dxvjadanup2nc" path="res://MUSA/ASSETS/fbx/citybits_texture.png" id="4_uee8x"]
 [ext_resource type="PackedScene" uid="uid://08dgsvc1jqog" path="res://MUSA/ASSETS/fbx/building_E_withoutBase.fbx" id="5_1s4qc"]
+[ext_resource type="Texture2D" uid="uid://cvebmcs300asm" path="res://AINI/ASSETS/Untitled design (4).png" id="5_r3wbc"]
 [ext_resource type="Texture2D" uid="uid://ck14ihuoexp03" path="res://AFI/ASSETS/low-poly-school-building/textures/School-Albedo.png" id="6_p52y4"]
+[ext_resource type="Texture2D" uid="uid://chbq2g6hdofkl" path="res://AINI/ASSETS/Untitled design (5).png" id="6_woswc"]
 [ext_resource type="ArrayMesh" uid="uid://cm34qf7g1s78k" path="res://AFI/ASSETS/low-poly-school-building/source/School.obj" id="7_e4mfu"]
-[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/SCENES/My Car/player_car.tscn" id="8_p7otj"]
+[ext_resource type="Texture2D" uid="uid://kb1x3e11xr47" path="res://AINI/ASSETS/Untitled design (6).png" id="7_ycyws"]
 [ext_resource type="ArrayMesh" uid="uid://qsoiycptqjv3" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Dead.obj" id="9_t5cmu"]
 [ext_resource type="ArrayMesh" uid="uid://dig74reieyyrw" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Summer.obj" id="10_s44bn"]
 [ext_resource type="ArrayMesh" uid="uid://slrwwgqvmhd0" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj" id="11_nsqp7"]
@@ -48,6 +53,22 @@ sky_material = SubResource("PanoramaSkyMaterial_yl73a")
 background_mode = 2
 sky = SubResource("Sky_xbcdb")
 tonemap_mode = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_wkljv"]
+font_size = 38
+
+[sub_resource type="LabelSettings" id="LabelSettings_meyyl"]
+font_size = 55
+
+[sub_resource type="LabelSettings" id="LabelSettings_2h2dd"]
+font_size = 27
+
+[sub_resource type="LabelSettings" id="LabelSettings_hc5yj"]
+font_size = 21
+
+[sub_resource type="LabelSettings" id="LabelSettings_x04ln"]
+font_size = 38
+font_color = Color(0.09411765, 0.4509804, 0.8117647, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k46nl"]
 resource_name = "citybits_texture"
@@ -127,6 +148,151 @@ size = Vector3(1, 0.1, 1)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1550459060]
 environment = SubResource("Environment_s77qv")
 
+[node name="MOBIL_MBG" parent="." unique_id=780432208 node_paths=PackedStringArray("km_h_label") instance=ExtResource("2_gnohd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.294933, 0.35022354, -39.27735)
+km_h_label = NodePath("../UI_UX - CanvasLayer/CANVAS/Speedo-Panel/Speed-Label")
+
+[node name="UI_UX - CanvasLayer" type="CanvasLayer" parent="." unique_id=1307330218]
+
+[node name="CANVAS" type="Control" parent="UI_UX - CanvasLayer" unique_id=9950367]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Timer-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=2135121880]
+layout_mode = 1
+offset_right = 413.99997
+offset_bottom = 230.0
+texture = ExtResource("3_u10ni")
+expand_mode = 1
+
+[node name="Timer-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Timer-Panel" unique_id=1207628076]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 84.0
+offset_right = 284.0
+offset_bottom = 160.0
+text = "00:00"
+label_settings = SubResource("LabelSettings_wkljv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Speedo-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=294184576]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -414.0
+offset_top = -230.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("4_61e4g")
+expand_mode = 1
+
+[node name="Speed-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Speedo-Panel" unique_id=1701735290]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 74.0
+offset_right = 268.0
+offset_bottom = 150.0
+text = "67"
+label_settings = SubResource("LabelSettings_meyyl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Meter-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Speedo-Panel" unique_id=2101005824]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 115.0
+offset_right = 268.0
+offset_bottom = 191.0
+text = "KM/H"
+label_settings = SubResource("LabelSettings_2h2dd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreTarget-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=1245917003]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -414.0
+offset_bottom = 230.0
+grow_horizontal = 0
+texture = ExtResource("5_r3wbc")
+expand_mode = 1
+
+[node name="Score-Texture" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=2126556804]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 40.0
+offset_right = 301.0
+offset_bottom = 166.0
+texture = ExtResource("6_woswc")
+expand_mode = 1
+
+[node name="Score-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=903399749]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 59.0
+offset_right = 308.0
+offset_bottom = 112.0
+text = "0"
+label_settings = SubResource("LabelSettings_wkljv")
+vertical_alignment = 1
+
+[node name="ScoreDisplay-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=159015815]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 45.0
+offset_right = 308.0
+offset_bottom = 98.0
+text = "Score"
+label_settings = SubResource("LabelSettings_hc5yj")
+
+[node name="Score-Label2" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=2132767081]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 66.0
+offset_right = 259.0
+offset_bottom = 119.0
+text = "______________"
+label_settings = SubResource("LabelSettings_x04ln")
+vertical_alignment = 1
+
+[node name="Target-Texure" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=1905505938]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 97.0
+offset_right = 187.125
+offset_bottom = 188.0
+texture = ExtResource("7_ycyws")
+expand_mode = 1
+
+[node name="TargetDisplay-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=1039654076]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 110.0
+offset_right = 308.0
+offset_bottom = 163.0
+text = "Target"
+label_settings = SubResource("LabelSettings_hc5yj")
+
+[node name="Target-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=155463165]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 123.0
+offset_right = 308.0
+offset_bottom = 176.0
+text = "0"
+label_settings = SubResource("LabelSettings_wkljv")
+vertical_alignment = 2
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=432392033]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 99.558914, 0)
 light_color = Color(0.6585696, 0, 0.021261374, 1)
@@ -173,9 +339,6 @@ transform = Transform3D(0.48591727, 0, -4.9763327, 0, 5, 0, 4.9763327, 0, 0.4859
 transform = Transform3D(-0.09990557, 0, 0.004344512, 0, 0.09999998, 0, -0.004344512, 0, -0.09990557, -5667.84, -10.980934, -2326.2876)
 material_override = SubResource("StandardMaterial3D_lvfll")
 mesh = ExtResource("7_e4mfu")
-
-[node name="car_sedan" parent="." unique_id=527359970 instance=ExtResource("8_p7otj")]
-transform = Transform3D(-0.9905335, 0, -0.13727163, 0, 1, 0, 0.13727163, 0, -0.9905335, 15.550017, 0.62567514, -44.132023)
 
 [node name="OakTreeDead" type="MeshInstance3D" parent="." unique_id=1742358567]
 transform = Transform3D(10.045, 0, 0, 0, 10.045, 0, 0, 0, 10.045, -2611.17, 0.3328477, 484.49774)
