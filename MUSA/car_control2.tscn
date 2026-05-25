@@ -1,7 +1,8 @@
 [gd_scene format=4 uid="uid://bh26qwjucon3e"]
 
-[ext_resource type="Script" uid="uid://by244slympguw" path="res://MUSA/car_control_2.gd" id="1_2wkoa"]
-[ext_resource type="Texture2D" uid="uid://im5nyhelqlox" path="res://MUSA/fbx/citybits_texture.png" id="1_ybgxi"]
+[ext_resource type="Script" uid="uid://by244slympguw" path="res://MUSA/SCRIPTS/car_control_2.gd" id="1_2wkoa"]
+[ext_resource type="Texture2D" path="res://MUSA/fbx/citybits_texture.png" id="1_ybgxi"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkvk2"]
 resource_name = "citybits_texture"

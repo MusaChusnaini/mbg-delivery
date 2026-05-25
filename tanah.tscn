@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d4nicf2tkbyp1"]
 
-[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/O5NY920.jpg" id="1_ajk2i"]
+[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/ASSETS/O5NY920.jpg" id="1_ajk2i"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5uilo"]
 size = Vector3(7811.258, 0.17749023, 4290.7437)

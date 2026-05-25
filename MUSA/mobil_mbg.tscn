@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://buhja2ny2spbr"]
 
-[ext_resource type="Script" uid="uid://by244slympguw" path="res://MUSA/car_control_2.gd" id="1_jjy2o"]
-[ext_resource type="Texture2D" uid="uid://im5nyhelqlox" path="res://MUSA/fbx/citybits_texture.png" id="2_0alug"]
-[ext_resource type="Texture2D" uid="uid://l024npmvci31" path="res://AFI/[Low Poly] City Vehicles Pack v1.2/city_vehicles_pallete.png" id="3_isfdg"]
+[ext_resource type="Script" uid="uid://by244slympguw" path="res://MUSA/SCRIPTS/car_control_2.gd" id="1_jjy2o"]
+[ext_resource type="Texture2D" uid="uid://dxvjadanup2nc" path="res://MUSA/ASSETS/fbx/citybits_texture.png" id="2_0alug"]
+[ext_resource type="Texture2D" uid="uid://1gxjmumcq2qj" path="res://AFI/ASSETS/[Low Poly] City Vehicles Pack v1.2/city_vehicles_pallete.png" id="3_jjy2o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkvk2"]
 resource_name = "citybits_texture"
@@ -47,7 +47,7 @@ shadow_mesh = SubResource("ArrayMesh_wkrls")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uowvt"]
 resource_name = "Material.001"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("3_isfdg")
+albedo_texture = ExtResource("3_jjy2o")
 emission_enabled = true
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4ewuf"]

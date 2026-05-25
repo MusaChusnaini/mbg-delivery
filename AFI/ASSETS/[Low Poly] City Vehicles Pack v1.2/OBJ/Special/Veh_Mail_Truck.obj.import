@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://baqf3do6u8uou"
+path="res://.godot/imported/Veh_Mail_Truck.obj-dc131407d1d1cc15b4269255a9f1d24c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_Mail_Truck.obj-dc131407d1d1cc15b4269255a9f1d24c.mesh"]
+
+source_file="res://AFI/ASSETS/[Low Poly] City Vehicles Pack v1.2/OBJ/Special/Veh_Mail_Truck.obj"
+dest_files=["res://.godot/imported/Veh_Mail_Truck.obj-dc131407d1d1cc15b4269255a9f1d24c.mesh", "res://.godot/imported/Veh_Mail_Truck.obj-dc131407d1d1cc15b4269255a9f1d24c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

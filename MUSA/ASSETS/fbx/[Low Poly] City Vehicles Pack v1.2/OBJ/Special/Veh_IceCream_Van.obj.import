@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dht7fg0mhlr6r"
+path="res://.godot/imported/Veh_IceCream_Van.obj-2a8ff52c74e355d81421c6dab09e82fd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_IceCream_Van.obj-2a8ff52c74e355d81421c6dab09e82fd.mesh"]
+
+source_file="res://MUSA/ASSETS/fbx/[Low Poly] City Vehicles Pack v1.2/OBJ/Special/Veh_IceCream_Van.obj"
+dest_files=["res://.godot/imported/Veh_IceCream_Van.obj-2a8ff52c74e355d81421c6dab09e82fd.mesh", "res://.godot/imported/Veh_IceCream_Van.obj-2a8ff52c74e355d81421c6dab09e82fd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

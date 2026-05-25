@@ -1,15 +1,16 @@
 [gd_scene format=4 uid="uid://jel6psy4en5i"]
 
 [ext_resource type="Texture2D" uid="uid://l5a2yt843ss8" path="res://MUSA/clouds_anime_6k.jpg" id="1_d63fl"]
-[ext_resource type="PackedScene" uid="uid://clloe3o0jy3o3" path="res://MUSA/fbx/building_A_withoutBase.fbx" id="1_oo441"]
+[ext_resource type="PackedScene" uid="uid://clloe3o0jy3o3" path="res://MUSA/ASSETS/fbx/building_A_withoutBase.fbx" id="1_oo441"]
 [ext_resource type="Script" uid="uid://cph7euje06kel" path="res://addons/road-generator/nodes/road_container.gd" id="2_0ankt"]
-[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/O5NY920.jpg" id="2_3r78l"]
+[ext_resource type="Texture2D" uid="uid://ym2vqrnwyp4s" path="res://AFI/ASSETS/O5NY920.jpg" id="2_3r78l"]
 [ext_resource type="Script" uid="uid://bxp3i4cnonh8y" path="res://addons/road-generator/nodes/road_manager.gd" id="2_aoktd"]
 [ext_resource type="Script" uid="uid://difs1qg4mpcpw" path="res://addons/road-generator/nodes/road_point.gd" id="3_4lf6w"]
 [ext_resource type="Texture2D" uid="uid://cwttv8ifdcyhw" path="res://MUSA/13075.jpg" id="3_d63fl"]
 [ext_resource type="PackedScene" uid="uid://dfggtpn3gyrn0" path="res://addons/road-generator/custom_containers/3way_2x2.tscn" id="4_0ankt"]
-[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/models/player_car.tscn" id="4_hvlaq"]
-[ext_resource type="PackedScene" uid="uid://cwxtjheugqf0v" path="res://MUSA/My Pohon/pohon001.tscn" id="9_s0wya"]
+[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/SCENES/My Car/player_car.tscn" id="4_hvlaq"]
+[ext_resource type="PackedScene" uid="uid://cwxtjheugqf0v" path="res://MUSA/SCENES/My Pohon/pohon001.tscn" id="9_s0wya"]
+
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_s0wya"]
 panorama = ExtResource("1_d63fl")

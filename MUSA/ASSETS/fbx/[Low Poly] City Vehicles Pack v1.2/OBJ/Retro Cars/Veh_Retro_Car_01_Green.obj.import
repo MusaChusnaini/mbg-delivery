@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtn6vci047k1u"
+path="res://.godot/imported/Veh_Retro_Car_01_Green.obj-9324e73c208cc8a7de0b2fd617ca6dea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Veh_Retro_Car_01_Green.obj-9324e73c208cc8a7de0b2fd617ca6dea.mesh"]
+
+source_file="res://MUSA/ASSETS/fbx/[Low Poly] City Vehicles Pack v1.2/OBJ/Retro Cars/Veh_Retro_Car_01_Green.obj"
+dest_files=["res://.godot/imported/Veh_Retro_Car_01_Green.obj-9324e73c208cc8a7de0b2fd617ca6dea.mesh", "res://.godot/imported/Veh_Retro_Car_01_Green.obj-9324e73c208cc8a7de0b2fd617ca6dea.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

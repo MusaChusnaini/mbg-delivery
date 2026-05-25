@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://i6klsljkwunj"]
 
-[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/models/player_car.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://bdka0iqduj018" path="res://MUSA/SCENES/My Car/player_car.tscn" id="1_80nbo"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_80nbo"]
 
