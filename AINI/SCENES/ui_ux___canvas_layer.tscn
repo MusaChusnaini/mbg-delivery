@@ -9,6 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://bim8ll5746ag" path="res://AINI/ASSETS/DESIGN_SP.png" id="7_jago3"]
 [ext_resource type="Texture2D" uid="uid://bfuc3b15s5en8" path="res://AINI/ASSETS/DESIGN_T.png" id="8_r5tkq"]
 [ext_resource type="Texture2D" uid="uid://ce4dxiv04tghj" path="res://AINI/ASSETS/DESIGN_TM.png" id="9_jago3"]
+[ext_resource type="Texture2D" uid="uid://d4mov3d34h2pp" path="res://AINI/ASSETS/DESIGN_MM.png" id="10_r5tkq"]
+[ext_resource type="Texture2D" uid="uid://w6eq3mmpj2vn" path="res://AINI/ASSETS/DESIGN_PLAY.png" id="11_h2xox"]
+[ext_resource type="Texture2D" uid="uid://mw8oo201vfa2" path="res://AINI/ASSETS/DESIGN_LEVELS.png" id="12_kdg36"]
+[ext_resource type="Texture2D" uid="uid://h6y7if5ii873" path="res://AINI/ASSETS/DESIGN_SETTINGS.png" id="13_g660s"]
+[ext_resource type="Texture2D" uid="uid://ctngm0f6ytnpb" path="res://AINI/ASSETS/DESIGN_EXIT.png" id="14_e4ndd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkljv"]
 font_size = 38
@@ -29,6 +34,7 @@ font_color = Color(0.09411765, 0.4509804, 0.8117647, 1)
 [node name="UI_UX - CanvasLayer" type="CanvasLayer" unique_id=1307330218]
 
 [node name="CANVAS" type="Control" parent="." unique_id=9950367]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -243,8 +249,42 @@ offset_bottom = -392.41492
 theme_override_font_sizes/font_size = 80
 text = "00 : 00"
 
-[node name="DesignTm" type="Sprite2D" parent="." unique_id=9148619]
+[node name="DesignTm" type="Sprite2D" parent="CANVAS" unique_id=9148619]
 position = Vector2(1094.0938, 97.45314)
 scale = Vector2(0.12239588, 0.14747687)
 texture = ExtResource("9_jago3")
 metadata/_edit_lock_ = true
+
+[node name="MAIN_MENU - CanvasLayer" type="CanvasLayer" parent="." unique_id=216113443]
+
+[node name="CANVAS" type="Control" parent="MAIN_MENU - CanvasLayer" unique_id=1960949296]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignMm" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS" unique_id=2136159757]
+position = Vector2(571, 321)
+scale = Vector2(0.5953705, 0.5964815)
+texture = ExtResource("10_r5tkq")
+
+[node name="DesignPlay" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm" unique_id=1943491957]
+position = Vector2(-3.359253, -13.411926)
+scale = Vector2(0.5268273, 0.54874265)
+texture = ExtResource("11_h2xox")
+
+[node name="DesignLevels" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay" unique_id=1707602714]
+position = Vector2(-10.310303, 221.06732)
+scale = Vector2(0.946301, 0.9825208)
+texture = ExtResource("12_kdg36")
+
+[node name="DesignSettings" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay/DesignLevels" unique_id=1917577293]
+position = Vector2(16.343018, 190.08057)
+scale = Vector2(0.94325316, 0.9506085)
+texture = ExtResource("13_g660s")
+
+[node name="DesignExit" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay/DesignLevels/DesignSettings" unique_id=777198332]
+position = Vector2(7.612915, 267.979)
+scale = Vector2(1.1590598, 1.1641208)
+texture = ExtResource("14_e4ndd")
