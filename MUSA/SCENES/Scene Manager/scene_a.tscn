@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cvf6vedevgp3"]
+
+[ext_resource type="Script" uid="uid://bbokihmlebfuu" path="res://MUSA/SCENES/Scene Manager/ui_parent_script.gd" id="1_xey3t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cw804"]
+font_size = 57
+
+[node name="SCENE A" type="CanvasLayer" unique_id=1077142154]
+script = ExtResource("1_xey3t")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=826116218]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11208347, 0.09491121, 0.20327976, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1125483958]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -65.0
+offset_right = 276.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SCENE A"
+label_settings = SubResource("LabelSettings_cw804")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="A_Button" type="Button" parent="." unique_id=33424961]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = 38.0
+offset_right = 102.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "LANJUT KE SCENE B"
+
+[connection signal="pressed" from="A_Button" to="." method="_on_a_button_pressed"]

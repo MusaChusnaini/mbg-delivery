@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c54amok6musu6"]
+
+[ext_resource type="Script" uid="uid://cmnj2seush5v4" path="res://MUSA/SCENES/audio_manager.gd" id="1_prswa"]
+[ext_resource type="AudioStream" uid="uid://dod4wn30jirv1" path="res://MUSA/SFX/checkpoin cute.mp3" id="2_hcbfi"]
+
+[node name="AudioManager" type="Node" unique_id=1170558428]
+script = ExtResource("1_prswa")
+
+[node name="checkpoint" type="AudioStreamPlayer" parent="." unique_id=1042864070]
+stream = ExtResource("2_hcbfi")
+bus = &"SFX"

@@ -15,6 +15,12 @@ run/main_scene="uid://qjww8br3s3vl"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameSystem="*uid://cpso842yfacfx"
+SceneManager="*uid://dibb1s4mvh1px"
+AudioManager="*uid://c54amok6musu6"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/road-generator/plugin.cfg")
@@ -26,6 +32,7 @@ import/blender/enabled=false
 [global_group]
 
 Player=""
+cars=""
 
 [input]
 
@@ -63,4 +70,5 @@ Handbrake={
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=3

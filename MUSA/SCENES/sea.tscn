@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b78p6vhdo1o52"]
+
+[ext_resource type="Texture2D" uid="uid://wvcotrate47p" path="res://MUSA/ASSETS/sea-texure.jpg" id="1_vbbe3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vb5ix"]
+albedo_texture = ExtResource("1_vbbe3")
+uv1_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bvoiu"]
+material = SubResource("StandardMaterial3D_vb5ix")
+
+[node name="Sea" type="MeshInstance3D" unique_id=1789599404]
+transform = Transform3D(4000, 0, 0, 0, 4000, 0, 0, 0, 4000, 0, 0, 0)
+mesh = SubResource("PlaneMesh_bvoiu")
