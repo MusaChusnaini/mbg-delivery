@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3f0awp33sq6a"
+path="res://.godot/imported/wheelbarrow.obj-5bfe7766eda93960732b0f24ea622654.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wheelbarrow.obj-5bfe7766eda93960732b0f24ea622654.mesh"]
+
+source_file="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/wheelbarrow.obj"
+dest_files=["res://.godot/imported/wheelbarrow.obj-5bfe7766eda93960732b0f24ea622654.mesh", "res://.godot/imported/wheelbarrow.obj-5bfe7766eda93960732b0f24ea622654.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

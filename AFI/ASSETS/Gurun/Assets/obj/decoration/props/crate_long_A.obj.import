@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://0vdupg10s2xm"
+path="res://.godot/imported/crate_long_A.obj-4de09a624e8a663755c65ddf47c66eda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crate_long_A.obj-4de09a624e8a663755c65ddf47c66eda.mesh"]
+
+source_file="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/crate_long_A.obj"
+dest_files=["res://.godot/imported/crate_long_A.obj-4de09a624e8a663755c65ddf47c66eda.mesh", "res://.godot/imported/crate_long_A.obj-4de09a624e8a663755c65ddf47c66eda.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

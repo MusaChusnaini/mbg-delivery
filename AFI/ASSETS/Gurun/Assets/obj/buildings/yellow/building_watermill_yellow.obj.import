@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbdpf6xgbpalf"
+path="res://.godot/imported/building_watermill_yellow.obj-28d4f0c42088b55748e6d09ea8941341.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_watermill_yellow.obj-28d4f0c42088b55748e6d09ea8941341.mesh"]
+
+source_file="res://AFI/ASSETS/Gurun/Assets/obj/buildings/yellow/building_watermill_yellow.obj"
+dest_files=["res://.godot/imported/building_watermill_yellow.obj-28d4f0c42088b55748e6d09ea8941341.mesh", "res://.godot/imported/building_watermill_yellow.obj-28d4f0c42088b55748e6d09ea8941341.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

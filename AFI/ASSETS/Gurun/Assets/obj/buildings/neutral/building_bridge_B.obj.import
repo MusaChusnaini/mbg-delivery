@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://0n3fbr36cl6g"
+path="res://.godot/imported/building_bridge_B.obj-9205d0777721e37829e2a66f9dc9d10f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_bridge_B.obj-9205d0777721e37829e2a66f9dc9d10f.mesh"]
+
+source_file="res://AFI/ASSETS/Gurun/Assets/obj/buildings/neutral/building_bridge_B.obj"
+dest_files=["res://.godot/imported/building_bridge_B.obj-9205d0777721e37829e2a66f9dc9d10f.mesh", "res://.godot/imported/building_bridge_B.obj-9205d0777721e37829e2a66f9dc9d10f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

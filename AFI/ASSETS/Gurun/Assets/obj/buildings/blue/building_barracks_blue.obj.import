@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bjnd8pv01mpuh"
+path="res://.godot/imported/building_barracks_blue.obj-41fb74f530b6e686c43d67bf37ea4f62.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_barracks_blue.obj-41fb74f530b6e686c43d67bf37ea4f62.mesh"]
+
+source_file="res://AFI/ASSETS/Gurun/Assets/obj/buildings/blue/building_barracks_blue.obj"
+dest_files=["res://.godot/imported/building_barracks_blue.obj-41fb74f530b6e686c43d67bf37ea4f62.mesh", "res://.godot/imported/building_barracks_blue.obj-41fb74f530b6e686c43d67bf37ea4f62.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
