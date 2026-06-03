@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://chbq2g6hdofkl" path="res://AINI/ASSETS/Untitled design (5).png" id="4_sn44k"]
 [ext_resource type="Texture2D" uid="uid://kb1x3e11xr47" path="res://AINI/ASSETS/Untitled design (6).png" id="5_s1woc"]
 [ext_resource type="Texture2D" uid="uid://d4jmt8jdxtcf0" path="res://AINI/ASSETS/DESIGN_SM.png" id="6_q4hrd"]
-[ext_resource type="Texture2D" uid="uid://bim8ll5746ag" path="res://AINI/ASSETS/DESIGN_SP.png" id="7_jago3"]
+[ext_resource type="Texture2D" uid="uid://cbelgtynoqq6f" path="res://AINI/ASSETS/DESIGN_ST.png" id="7_h2xox"]
 [ext_resource type="Texture2D" uid="uid://bfuc3b15s5en8" path="res://AINI/ASSETS/DESIGN_T.png" id="8_r5tkq"]
 [ext_resource type="Texture2D" uid="uid://ce4dxiv04tghj" path="res://AINI/ASSETS/DESIGN_TM.png" id="9_jago3"]
 [ext_resource type="Texture2D" uid="uid://d4mov3d34h2pp" path="res://AINI/ASSETS/DESIGN_MM.png" id="10_r5tkq"]
@@ -34,14 +34,12 @@ font_color = Color(0.09411765, 0.4509804, 0.8117647, 1)
 [node name="UI_UX - CanvasLayer" type="CanvasLayer" unique_id=1307330218]
 
 [node name="CANVAS" type="Control" parent="." unique_id=9950367]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_lock_ = true
 
 [node name="Timer-Panel" type="TextureRect" parent="CANVAS" unique_id=2135121880]
 visible = false
@@ -207,28 +205,29 @@ offset_right = 1072.0
 offset_bottom = 209.0
 metadata/_edit_lock_ = true
 
-[node name="DesignSp" type="Sprite2D" parent="CANVAS/ScoreT_Panel" unique_id=391528169]
-position = Vector2(75.00019, -1.9999998)
-scale = Vector2(0.39814815, 0.39555553)
-texture = ExtResource("7_jago3")
+[node name="DesignSt" type="Sprite2D" parent="CANVAS/ScoreT_Panel" unique_id=421075454]
+position = Vector2(130.49994, 110.99999)
+scale = Vector2(0.2435185, 0.24)
+texture = ExtResource("7_h2xox")
+metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="CANVAS/ScoreT_Panel/DesignSp" unique_id=1431519611]
-offset_left = 97.95301
-offset_top = 176.96631
-offset_right = 262.953
-offset_bottom = 286.9663
+[node name="Label" type="Label" parent="CANVAS/ScoreT_Panel/DesignSt" unique_id=1431519611]
+offset_left = -59.54342
+offset_top = -162.49995
+offset_right = 145.45657
+offset_bottom = -25.499954
 theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
-theme_override_font_sizes/font_size = 80
-text = "1 / 3"
+theme_override_font_sizes/font_size = 115
+text = "0 / 10"
 
-[node name="Label2" type="Label" parent="CANVAS/ScoreT_Panel/DesignSp" unique_id=1166262643]
-offset_left = 97.953
-offset_top = 341.29218
-offset_right = 262.953
-offset_bottom = 451.29218
+[node name="Label2" type="Label" parent="CANVAS/ScoreT_Panel/DesignSt/Label" unique_id=1166262643]
+layout_mode = 0
+offset_top = 270.83334
+offset_right = 165.0
+offset_bottom = 380.83334
 theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
-theme_override_font_sizes/font_size = 80
-text = "1 / 3"
+theme_override_font_sizes/font_size = 115
+text = "0 / 10"
 
 [node name="Timer_Panel" type="TextureRect" parent="CANVAS" unique_id=1232628393]
 layout_mode = 0
@@ -256,6 +255,7 @@ texture = ExtResource("9_jago3")
 metadata/_edit_lock_ = true
 
 [node name="MAIN_MENU - CanvasLayer" type="CanvasLayer" parent="." unique_id=216113443]
+visible = false
 
 [node name="CANVAS" type="Control" parent="MAIN_MENU - CanvasLayer" unique_id=1960949296]
 layout_mode = 3
