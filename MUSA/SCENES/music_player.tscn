@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bodiiptlqbxnn"]
+
+[ext_resource type="Script" uid="uid://b50mpowxf0v7b" path="res://MUSA/SCENES/music_player.gd" id="1_lq5xa"]
+
+[node name="MusicPlayer" type="Node" unique_id=837580482]
+script = ExtResource("1_lq5xa")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1892647406]
+volume_db = -4.677
+autoplay = true

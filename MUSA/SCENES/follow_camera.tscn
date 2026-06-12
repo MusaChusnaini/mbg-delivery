@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://j3tgy27f6ykl"]
 
-[ext_resource type="Script" path="res://MUSA/SCENES/follow_camera.gd" id="1_2yw7d"]
+[ext_resource type="Script" uid="uid://bcpyh3go02nsy" path="res://MUSA/SCENES/follow_camera.gd" id="1_2yw7d"]
 
 [node name="FollowCamera" type="Node3D" unique_id=2062275161]
 script = ExtResource("1_2yw7d")

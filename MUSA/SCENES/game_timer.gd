@@ -14,6 +14,8 @@ func _process(delta: float) -> void:
 
 	timer_label.text = formatted_time
 
+
+
 func _on_timeout() -> void:
 	if !GameSystem.game_finished:
 		print("Timeout, You Lose..")
