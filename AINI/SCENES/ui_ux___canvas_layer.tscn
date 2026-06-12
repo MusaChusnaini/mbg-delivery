@@ -5,7 +5,28 @@
 [ext_resource type="Texture2D" uid="uid://cvebmcs300asm" path="res://AINI/ASSETS/Untitled design (4).png" id="3_o53m6"]
 [ext_resource type="Texture2D" uid="uid://chbq2g6hdofkl" path="res://AINI/ASSETS/Untitled design (5).png" id="4_sn44k"]
 [ext_resource type="Texture2D" uid="uid://kb1x3e11xr47" path="res://AINI/ASSETS/Untitled design (6).png" id="5_s1woc"]
-
+[ext_resource type="Texture2D" uid="uid://d4jmt8jdxtcf0" path="res://AINI/ASSETS/DESIGN_SM.png" id="6_q4hrd"]
+[ext_resource type="Texture2D" uid="uid://cbelgtynoqq6f" path="res://AINI/ASSETS/DESIGN_ST.png" id="7_h2xox"]
+[ext_resource type="Texture2D" uid="uid://bfuc3b15s5en8" path="res://AINI/ASSETS/DESIGN_T.png" id="8_r5tkq"]
+[ext_resource type="Texture2D" uid="uid://ce4dxiv04tghj" path="res://AINI/ASSETS/DESIGN_TM.png" id="9_jago3"]
+[ext_resource type="Texture2D" uid="uid://d4mov3d34h2pp" path="res://AINI/ASSETS/DESIGN_MM.png" id="10_r5tkq"]
+[ext_resource type="Texture2D" uid="uid://w6eq3mmpj2vn" path="res://AINI/ASSETS/DESIGN_PLAY.png" id="11_h2xox"]
+[ext_resource type="Texture2D" uid="uid://h6y7if5ii873" path="res://AINI/ASSETS/DESIGN_SETTINGS.png" id="13_g660s"]
+[ext_resource type="Texture2D" uid="uid://ctngm0f6ytnpb" path="res://AINI/ASSETS/DESIGN_EXIT.png" id="14_e4ndd"]
+[ext_resource type="Texture2D" uid="uid://d3adebjypp83s" path="res://AINI/ASSETS/DESIGN_S.png" id="14_u3tom"]
+[ext_resource type="Texture2D" uid="uid://ddrvto2eo28u3" path="res://AINI/ASSETS/DESIGN_S(back).png" id="15_mobvg"]
+[ext_resource type="Texture2D" uid="uid://cysmyle6ak0xf" path="res://AINI/ASSETS/DESIGN_YL.png" id="16_2sao0"]
+[ext_resource type="Texture2D" uid="uid://cdw3cp78quh4s" path="res://AINI/ASSETS/DESIGN_YL(restart).png" id="17_1cjis"]
+[ext_resource type="Texture2D" uid="uid://wy5b1hqkvij1" path="res://AINI/ASSETS/DESIGN_YL(menu).png" id="18_0ajrw"]
+[ext_resource type="Texture2D" uid="uid://5cra7t60ypf8" path="res://AINI/ASSETS/DESIGN_YW.png" id="19_vv2en"]
+[ext_resource type="Texture2D" uid="uid://dpjnsa4hi64g2" path="res://AINI/ASSETS/DESIGN_YW(next).png" id="20_kjpk1"]
+[ext_resource type="Texture2D" uid="uid://dhjv8rnydb88e" path="res://AINI/ASSETS/DESIGN_S(restart).png" id="21_r3a7u"]
+[ext_resource type="Texture2D" uid="uid://c6jtnt4m6nqgb" path="res://AINI/ASSETS/DESIGN_S(menu).png" id="22_yw2eu"]
+[ext_resource type="Texture2D" uid="uid://dacglm4fh8r80" path="res://AINI/ASSETS/DESIGN_LVL.png" id="23_sr0t2"]
+[ext_resource type="Texture2D" uid="uid://q6te26ugg4h5" path="res://AINI/ASSETS/DESIGN_LVL1.png" id="24_pwgb6"]
+[ext_resource type="Texture2D" uid="uid://da6ogpahvfgtg" path="res://AINI/ASSETS/DESIGN_LVL2.png" id="25_ru8v2"]
+[ext_resource type="Texture2D" uid="uid://cf4ly5p8b4pyq" path="res://AINI/ASSETS/DESIGN_LVL3.png" id="26_7euii"]
+[ext_resource type="Texture2D" uid="uid://dk1oxswi8gkex" path="res://AINI/ASSETS/DESIGN_CS.png" id="27_mobvg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wkljv"]
 font_size = 38
@@ -23,9 +44,12 @@ font_size = 21
 font_size = 38
 font_color = Color(0.09411765, 0.4509804, 0.8117647, 1)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rymnc"]
+
 [node name="UI_UX - CanvasLayer" type="CanvasLayer" unique_id=1307330218]
 
 [node name="CANVAS" type="Control" parent="." unique_id=9950367]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,6 +58,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Timer-Panel" type="TextureRect" parent="CANVAS" unique_id=2135121880]
+visible = false
 layout_mode = 1
 offset_right = 413.99997
 offset_bottom = 230.0
@@ -41,6 +66,7 @@ texture = ExtResource("1_7slbr")
 expand_mode = 1
 
 [node name="Timer-Label" type="Label" parent="CANVAS/Timer-Panel" unique_id=1207628076]
+visible = false
 layout_mode = 0
 offset_left = 143.0
 offset_top = 84.0
@@ -52,6 +78,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Speedo-Panel" type="TextureRect" parent="CANVAS" unique_id=294184576]
+visible = false
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -88,6 +115,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ScoreTarget-Panel" type="TextureRect" parent="CANVAS" unique_id=1245917003]
+visible = false
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -163,3 +191,237 @@ offset_bottom = 176.0
 text = "0"
 label_settings = SubResource("LabelSettings_wkljv")
 vertical_alignment = 2
+
+[node name="SpeedT_Panel" type="TextureRect" parent="CANVAS" unique_id=878812932]
+layout_mode = 0
+offset_left = 639.0
+offset_top = 356.0
+offset_right = 1146.0
+offset_bottom = 627.0
+metadata/_edit_lock_ = true
+
+[node name="DesignSm" type="Sprite2D" parent="CANVAS/SpeedT_Panel" unique_id=1994087134]
+position = Vector2(439, 396)
+scale = Vector2(0.6104167, 0.5957408)
+texture = ExtResource("6_q4hrd")
+
+[node name="Label" type="Label" parent="CANVAS/SpeedT_Panel/DesignSm" unique_id=1337063744]
+offset_left = -280.13654
+offset_top = -444.82434
+offset_right = -188.13654
+offset_bottom = -334.82434
+theme_override_font_sizes/font_size = 80
+text = "67"
+
+[node name="ScoreT_Panel" type="TextureRect" parent="CANVAS" unique_id=703373608]
+layout_mode = 0
+offset_left = 802.0
+offset_top = -1.0
+offset_right = 1072.0
+offset_bottom = 209.0
+metadata/_edit_lock_ = true
+
+[node name="DesignSt" type="Sprite2D" parent="CANVAS/ScoreT_Panel" unique_id=421075454]
+position = Vector2(130.49994, 110.99999)
+scale = Vector2(0.2435185, 0.24)
+texture = ExtResource("7_h2xox")
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="CANVAS/ScoreT_Panel/DesignSt" unique_id=1431519611]
+offset_left = -59.54342
+offset_top = -162.49995
+offset_right = 145.45657
+offset_bottom = -25.499954
+theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
+theme_override_font_sizes/font_size = 115
+text = "0 / 10"
+
+[node name="Label2" type="Label" parent="CANVAS/ScoreT_Panel/DesignSt/Label" unique_id=1166262643]
+layout_mode = 0
+offset_top = 270.83334
+offset_right = 165.0
+offset_bottom = 380.83334
+theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
+theme_override_font_sizes/font_size = 115
+text = "0 / 10"
+
+[node name="Timer_Panel" type="TextureRect" parent="CANVAS" unique_id=1232628393]
+layout_mode = 0
+offset_right = 428.0
+offset_bottom = 219.0
+metadata/_edit_lock_ = true
+
+[node name="DesignT" type="Sprite2D" parent="CANVAS/Timer_Panel" unique_id=942739211]
+position = Vector2(257.75003, 352.50003)
+scale = Vector2(0.5319444, 0.5711111)
+texture = ExtResource("8_r5tkq")
+
+[node name="Label" type="Label" parent="CANVAS/Timer_Panel/DesignT" unique_id=2069966407]
+offset_left = -213.55951
+offset_top = -502.41492
+offset_right = 33.44049
+offset_bottom = -392.41492
+theme_override_font_sizes/font_size = 80
+text = "00 : 00"
+
+[node name="DesignTm" type="Sprite2D" parent="CANVAS" unique_id=9148619]
+position = Vector2(1094.0938, 97.45314)
+scale = Vector2(0.12239588, 0.14747687)
+texture = ExtResource("9_jago3")
+metadata/_edit_lock_ = true
+
+[node name="MAIN_MENU - CanvasLayer" type="CanvasLayer" parent="." unique_id=216113443]
+visible = false
+
+[node name="CANVAS" type="Control" parent="MAIN_MENU - CanvasLayer" unique_id=1960949296]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignMm" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS" unique_id=2136159757]
+position = Vector2(571, 321)
+scale = Vector2(0.5953705, 0.5964815)
+texture = ExtResource("10_r5tkq")
+
+[node name="DesignPlay" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm" unique_id=1943491957]
+position = Vector2(-3.359253, -13.411926)
+scale = Vector2(0.5268273, 0.54874265)
+texture = ExtResource("11_h2xox")
+
+[node name="DesignLevels" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay" unique_id=1707602714]
+position = Vector2(-10.310303, 221.06732)
+scale = Vector2(0.946301, 0.9825208)
+texture = SubResource("CompressedTexture2D_rymnc")
+
+[node name="DesignSettings" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay/DesignLevels" unique_id=1917577293]
+position = Vector2(16.343018, 190.08057)
+scale = Vector2(0.94325316, 0.9506085)
+texture = ExtResource("13_g660s")
+
+[node name="DesignExit" type="Sprite2D" parent="MAIN_MENU - CanvasLayer/CANVAS/DesignMm/DesignPlay/DesignLevels/DesignSettings" unique_id=777198332]
+position = Vector2(7.612915, 267.979)
+scale = Vector2(1.1590598, 1.1641208)
+texture = ExtResource("14_e4ndd")
+
+[node name="SETTINGS - CanvasLayer" type="CanvasLayer" parent="." unique_id=1437032905]
+visible = false
+
+[node name="CANVAS" type="Control" parent="SETTINGS - CanvasLayer" unique_id=572010486]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignS" type="Sprite2D" parent="SETTINGS - CanvasLayer/CANVAS" unique_id=1145200887]
+position = Vector2(569.5, 318.5)
+scale = Vector2(0.5898149, 0.5933334)
+texture = ExtResource("14_u3tom")
+
+[node name="DesignS(back)" type="Sprite2D" parent="SETTINGS - CanvasLayer/CANVAS/DesignS" unique_id=2052648065]
+position = Vector2(5.934082, 948.0335)
+scale = Vector2(1.0215853, 1.1279651)
+texture = ExtResource("15_mobvg")
+
+[node name="WIN_LOSE_SCREEN - CanvasLayer" type="CanvasLayer" parent="." unique_id=2007691882]
+visible = false
+
+[node name="Canvas_lose_screen" type="Control" parent="WIN_LOSE_SCREEN - CanvasLayer" unique_id=1796689534]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 1116.0
+offset_bottom = 653.0
+metadata/_edit_lock_ = true
+
+[node name="DesignYl" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_lose_screen" unique_id=1928923658]
+position = Vector2(564.5, 449.5)
+scale = Vector2(0.51203704, 0.47185192)
+texture = ExtResource("16_2sao0")
+
+[node name="DesignYl(restart)" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_lose_screen/DesignYl" unique_id=175140549]
+position = Vector2(-59.56604, -295.64362)
+scale = Vector2(0.607595, 0.7912086)
+texture = ExtResource("17_1cjis")
+
+[node name="DesignYl(menu)" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_lose_screen/DesignYl/DesignYl(restart)" unique_id=36375749]
+position = Vector2(180, -2.6785812)
+scale = Vector2(1.032552, 1.0141371)
+texture = ExtResource("18_0ajrw")
+
+[node name="Canvas_win_screen" type="Control" parent="WIN_LOSE_SCREEN - CanvasLayer" unique_id=479476368]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignYw" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_win_screen" unique_id=1757395555]
+position = Vector2(564, 451.99997)
+scale = Vector2(0.51203704, 0.47444445)
+texture = ExtResource("19_vv2en")
+
+[node name="DesignYw(next)" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_win_screen/DesignYw" unique_id=1865288427]
+position = Vector2(-13.670776, -288.7588)
+scale = Vector2(0.8643762, 0.9664325)
+texture = ExtResource("20_kjpk1")
+
+[node name="DesignS(restart)" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_win_screen/DesignYw/DesignYw(next)" unique_id=1482784860]
+position = Vector2(20.334595, 6.5429077)
+scale = Vector2(1.0147752, 0.9836428)
+texture = ExtResource("21_r3a7u")
+
+[node name="DesignS(menu)" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_win_screen/DesignYw/DesignYw(next)/DesignS(restart)" unique_id=1164644338]
+position = Vector2(27.23999, 2.217102)
+scale = Vector2(0.8855172, 0.99273777)
+texture = ExtResource("22_yw2eu")
+
+[node name="PANEL_LEVEL - CanvasLayer" type="CanvasLayer" parent="." unique_id=269150589]
+visible = false
+
+[node name="CANVAS" type="Control" parent="PANEL_LEVEL - CanvasLayer" unique_id=1763634877]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignLvl" type="Sprite2D" parent="PANEL_LEVEL - CanvasLayer/CANVAS" unique_id=229771982]
+position = Vector2(577, 299.00003)
+scale = Vector2(0.58472216, 0.5572222)
+texture = ExtResource("23_sr0t2")
+metadata/_edit_lock_ = true
+
+[node name="DesignLvl1" type="Sprite2D" parent="PANEL_LEVEL - CanvasLayer/CANVAS/DesignLvl" unique_id=916901722]
+position = Vector2(-41.04512, 123.82848)
+scale = Vector2(0.7569281, 0.940183)
+texture = ExtResource("24_pwgb6")
+
+[node name="DesignLvl2" type="Sprite2D" parent="PANEL_LEVEL - CanvasLayer/CANVAS/DesignLvl/DesignLvl1" unique_id=1211408249]
+position = Vector2(6.7781982, -2.020935)
+scale = Vector2(1.0188285, 1.007953)
+texture = ExtResource("25_ru8v2")
+
+[node name="DesignLvl3" type="Sprite2D" parent="PANEL_LEVEL - CanvasLayer/CANVAS/DesignLvl/DesignLvl1/DesignLvl2" unique_id=561767785]
+position = Vector2(-2.2176514, 4.01001)
+scale = Vector2(1.00154, 0.9494104)
+texture = ExtResource("26_7euii")
+
+[node name="CREDIT_SCENE - CanvasLayer" type="CanvasLayer" parent="." unique_id=367436900]
+visible = false
+
+[node name="Control" type="Control" parent="CREDIT_SCENE - CanvasLayer" unique_id=1086695116]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="DesignCs" type="Sprite2D" parent="CREDIT_SCENE - CanvasLayer/Control" unique_id=1566590288]
+position = Vector2(567, 300)
+scale = Vector2(0.58148146, 0.5925926)
+texture = ExtResource("27_mobvg")
