@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b4xjobtwkqykh"]
+
+[ext_resource type="PackedScene" uid="uid://ehgtigwvabd3" path="res://AFI/ASSETS/low-poly_city_night/factory/source/zavod/zavod.fbx" id="1_ex777"]
+[ext_resource type="Texture2D" uid="uid://b55tgw0fnuxv1" path="res://AFI/ASSETS/low-poly_city_night/factory/textures/1001_albedo.jpg" id="2_8bcbj"]
+[ext_resource type="Texture2D" uid="uid://di4txhfecgi58" path="res://AFI/ASSETS/low-poly_city_night/factory/textures/1002_roughness.jpg" id="3_fgr55"]
+[ext_resource type="Texture2D" uid="uid://bgw0hy5sckhma" path="res://AFI/ASSETS/low-poly_city_night/factory/textures/1001_AO.jpg" id="4_ewt7b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xg52t"]
+albedo_texture = ExtResource("2_8bcbj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rh3dd"]
+albedo_texture = ExtResource("2_8bcbj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f2r6u"]
+albedo_texture = ExtResource("3_fgr55")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvcif"]
+albedo_texture = ExtResource("4_ewt7b")
+
+[node name="zavod" unique_id=65210442 instance=ExtResource("1_ex777")]
+
+[node name="Zdanie_Centr" parent="." index="0" unique_id=1929378134]
+material_override = SubResource("StandardMaterial3D_xg52t")
+
+[node name="Zdanie_Cheh" parent="." index="1" unique_id=36268545]
+material_override = SubResource("StandardMaterial3D_rh3dd")
+
+[node name="Zdanie_office" parent="." index="2" unique_id=265263555]
+material_override = SubResource("StandardMaterial3D_f2r6u")
+
+[node name="Truba" parent="." index="3" unique_id=1947508417]
+material_override = SubResource("StandardMaterial3D_kvcif")

@@ -4537,7 +4537,7 @@ mesh = ExtResource("58_re6st")
 shape = SubResource("ConvexPolygonShape3D_sre0s")
 
 [node name="WoodPlankB8" type="MeshInstance3D" parent="." unique_id=2061354559]
-transform = Transform3D(2.8797956, 0, 5.816087, 0, 6.49, 0, -5.816087, 0, 2.8797956, -1584.717, 0.10000086, -1207.8748)
+transform = Transform3D(2.8797956, 0, 5.816087, 0, 6.49, 0, -5.816087, 0, 2.8797956, -1572.1289, 0.10000086, -1192.4487)
 mesh = ExtResource("58_re6st")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="WoodPlankB8" unique_id=2103503276]
@@ -5593,7 +5593,7 @@ mesh = ExtResource("76_6b0e4")
 shape = SubResource("ConvexPolygonShape3D_egbxf")
 
 [node name="ResourceLumber11" type="MeshInstance3D" parent="." unique_id=1306093049]
-transform = Transform3D(11.735, 0, 0, 0, 11.735, 0, 0, 0, 11.735, -1537.0273, 0.100000426, -972.46765)
+transform = Transform3D(6.523363, 0, -9.754791, 0, 11.735, 0, 9.754791, 0, 6.523363, -1544.0566, 0.09999852, -952.87463)
 mesh = ExtResource("76_6b0e4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ResourceLumber11" unique_id=747158562]
@@ -5602,7 +5602,7 @@ mesh = ExtResource("76_6b0e4")
 shape = SubResource("ConvexPolygonShape3D_egbxf")
 
 [node name="ResourceLumber12" type="MeshInstance3D" parent="." unique_id=1295004006]
-transform = Transform3D(11.735, 0, 0, 0, 11.735, 0, 0, 0, 11.735, -1475.5205, 0.100000426, -385.35675)
+transform = Transform3D(6.316952, 0, -9.8897085, 0, 11.735, 0, 9.8897085, 0, 6.316952, -1381.7997, 0.100000426, -367.41513)
 mesh = ExtResource("76_6b0e4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ResourceLumber12" unique_id=1247159958]
@@ -5611,7 +5611,7 @@ mesh = ExtResource("76_6b0e4")
 shape = SubResource("ConvexPolygonShape3D_egbxf")
 
 [node name="ResourceLumber13" type="MeshInstance3D" parent="." unique_id=2145008805]
-transform = Transform3D(11.735, 0, 0, 0, 11.735, 0, 0, 0, 11.735, -1453.1544, 0.100000426, -519.5536)
+transform = Transform3D(11.09065, 0, -3.8350632, 0, 11.735, 0, 3.8350632, 0, 11.09065, -1485.1012, 0.10000138, -497.40298)
 mesh = ExtResource("76_6b0e4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ResourceLumber13" unique_id=705164882]
