@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://wig7gyoq822w"]
+
+[ext_resource type="PackedScene" uid="uid://dgw13vg5m88qi" path="res://MUSA/ASSETS/fbx/trafficlight_C.fbx" id="1_y0dsx"]
+
+[node name="trafficlight_C" unique_id=1277105476 instance=ExtResource("1_y0dsx")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="1" unique_id=1794128343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6666881, 0.79339564, 0.12740108)
+light_color = Color(0.38565686, 0.6613977, 0, 1)
+light_energy = 16.0
+spot_angle = 26.81909
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." index="2" unique_id=296174685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6660173, 0.8573053, 0.13881373)
+light_color = Color(0.72695786, 0.61755735, 7.70092e-07, 1)
+light_energy = 16.0
+spot_angle = 23.83895
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="." index="3" unique_id=1042949693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66601604, 0.9286988, 0.104557484)
+light_color = Color(0.9999998, 0.15883347, 0.27021343, 1)
+light_energy = 10.61
+spot_angle = 38.179855
