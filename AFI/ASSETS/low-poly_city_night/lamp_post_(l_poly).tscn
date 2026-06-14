@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cqbyktcyqfny5"]
+
+[ext_resource type="PackedScene" uid="uid://gy4tjlo16bc4" path="res://AFI/ASSETS/low-poly_city_night/lamp-post/source/Lamp Post (LPoly).fbx" id="1_cgvpo"]
+[ext_resource type="Texture2D" uid="uid://cnvnkmtjutkvc" path="res://AFI/ASSETS/low-poly_city_night/lamp-post/textures/DefaultMaterial_Base_Color.png" id="2_r7kn1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yg3li"]
+albedo_texture = ExtResource("2_r7kn1")
+
+[node name="Lamp Post (LPoly)" unique_id=1464634421 instance=ExtResource("1_cgvpo")]
+
+[node name="LampPost_LPoly" parent="." index="0" unique_id=1972117341]
+material_override = SubResource("StandardMaterial3D_yg3li")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1" unique_id=1427090882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88251334, 3.5543056, 0.031123519)
+light_color = Color(1, 0.53399724, 0.2511681, 1)
+light_energy = 16.0
+omni_range = 11.794993

@@ -1,0 +1,392 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.15199747681617737,
+        0.9897018671035767,
+        0.07949747145175934
+      ],
+      "min": [
+        -0.07949747145175934,
+        -0.0062500000931322575,
+        -0.15199747681617737
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28092,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.991713285446167,
+        0.994226336479187
+      ],
+      "min": [
+        0.005773669574409723,
+        0.006643474102020264
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18728,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.991713285446167,
+        0.994226336479187
+      ],
+      "min": [
+        0.005773669574409723,
+        0.006643474102020264
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37456,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.991713285446167,
+        0.994226336479187
+      ],
+      "min": [
+        0.005773669574409723,
+        0.006643474102020264
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 56184,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.991713285446167,
+        0.994226336479187
+      ],
+      "min": [
+        0.005773669574409723,
+        0.006643474102020264
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 74912,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        -5.997032204163588e-09,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 93640,
+      "componentType": 5126,
+      "count": 2341,
+      "max": [
+        0.991713285446167,
+        0.994226336479187
+      ],
+      "min": [
+        0.005773669574409723,
+        0.006643474102020264
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4854,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "KenVeel (https://sketchfab.com/KenVeel)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/low-poly-garden-lamp-stylized-outdoor-light-6c945121ca0c41bf988b6e4f5769b414",
+      "title": "Low Poly Garden Lamp – Stylized Outdoor Light"
+    },
+    "generator": "Sketchfab-16.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 19416,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 112368,
+      "byteOffset": 19416,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 56184,
+      "byteOffset": 131784,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 37456,
+      "byteOffset": 187968,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 225424,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength",
+    "KHR_materials_specular"
+  ],
+  "images": [
+    {
+      "uri": "textures/texture_baseColor.png"
+    },
+    {
+      "uri": "textures/texture_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/texture_emissive.png"
+    },
+    {
+      "uri": "textures/texture_normal.png"
+    },
+    {
+      "uri": "textures/texture_specularf0.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 2,
+        "texCoord": 2
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10.0
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0,
+          "specularTexture": {
+            "index": 4,
+            "texCoord": 4
+          }
+        }
+      },
+      "name": "texture",
+      "normalTexture": {
+        "index": 3,
+        "texCoord": 3
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5,
+            "TEXCOORD_3": 6,
+            "TEXCOORD_4": 7,
+            "TEXCOORD_5": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "Garden lamp_0"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_4"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}
