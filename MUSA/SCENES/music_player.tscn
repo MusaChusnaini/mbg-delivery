@@ -7,4 +7,3 @@ script = ExtResource("1_lq5xa")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1892647406]
 volume_db = -4.677
-autoplay = true

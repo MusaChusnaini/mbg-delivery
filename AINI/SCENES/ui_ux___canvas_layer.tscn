@@ -326,7 +326,6 @@ scale = Vector2(1.0215853, 1.1279651)
 texture = ExtResource("15_mobvg")
 
 [node name="WIN_LOSE_SCREEN - CanvasLayer" type="CanvasLayer" parent="." unique_id=2007691882]
-visible = false
 
 [node name="Canvas_lose_screen" type="Control" parent="WIN_LOSE_SCREEN - CanvasLayer" unique_id=1796689534]
 layout_mode = 3

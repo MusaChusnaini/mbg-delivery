@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://3go5pnav8miw"]
 
+[ext_resource type="Script" uid="uid://dibb1s4mvh1px" path="res://MUSA/SCENES/Scene Manager/scene-manager-script.gd" id="1_66250"]
+
 [node name="SceneManager" type="Node3D" unique_id=1971355910]
+script = ExtResource("1_66250")

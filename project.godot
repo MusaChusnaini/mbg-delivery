@@ -11,16 +11,16 @@ config_version=5
 [application]
 
 config/name="MBG_Delivery"
-run/main_scene="uid://qjww8br3s3vl"
+run/main_scene="uid://beih1n8ru5ahr"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameSystem="*uid://cpso842yfacfx"
-SceneManager="*uid://dibb1s4mvh1px"
 AudioManager="*uid://c54amok6musu6"
 MusicPlayer="*uid://bodiiptlqbxnn"
+SceneManager="*uid://dibb1s4mvh1px"
 
 [editor_plugins]
 
