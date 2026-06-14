@@ -1,12 +1,6 @@
 [gd_scene format=4 uid="uid://mk4p0or6ce7j"]
 
 [ext_resource type="Texture2D" uid="uid://yigjjt1ff6km" path="res://AFI/ASSETS/langit gurun/sky_12_2k.png" id="1_nwxtb"]
-[ext_resource type="PackedScene" uid="uid://buhja2ny2spbr" path="res://MUSA/mobil_mbg.tscn" id="2_gnohd"]
-[ext_resource type="Texture2D" uid="uid://bil86tbw1hrlm" path="res://AINI/ASSETS/Untitled design.png" id="3_u10ni"]
-[ext_resource type="Texture2D" uid="uid://blm1caqajrgx5" path="res://AINI/ASSETS/Untitled design (8).png" id="4_61e4g"]
-[ext_resource type="Texture2D" uid="uid://cvebmcs300asm" path="res://AINI/ASSETS/Untitled design (4).png" id="5_r3wbc"]
-[ext_resource type="Texture2D" uid="uid://chbq2g6hdofkl" path="res://AINI/ASSETS/Untitled design (5).png" id="6_woswc"]
-[ext_resource type="Texture2D" uid="uid://kb1x3e11xr47" path="res://AINI/ASSETS/Untitled design (6).png" id="7_ycyws"]
 [ext_resource type="ArrayMesh" uid="uid://qsoiycptqjv3" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Dead.obj" id="9_t5cmu"]
 [ext_resource type="ArrayMesh" uid="uid://dig74reieyyrw" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Summer.obj" id="10_s44bn"]
 [ext_resource type="ArrayMesh" uid="uid://slrwwgqvmhd0" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj" id="11_nsqp7"]
@@ -63,18 +57,34 @@
 [ext_resource type="ArrayMesh" uid="uid://ckqd0s27owiwv" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/trees_A_large.obj" id="67_2ndpu"]
 [ext_resource type="ArrayMesh" uid="uid://1wm864dk21sb" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/trees_A_medium.obj" id="68_c16av"]
 [ext_resource type="ArrayMesh" uid="uid://cmvwo622klkan" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/trees_A_small.obj" id="69_lwk5g"]
+[ext_resource type="Script" uid="uid://bs320u8ppoqp5" path="res://MUSA/SCENES/game_timer.gd" id="70_6cga5"]
 [ext_resource type="ArrayMesh" uid="uid://u224ujjshyft" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/hills_A_trees.obj" id="70_ocpoe"]
 [ext_resource type="ArrayMesh" uid="uid://bplsmobxyyer8" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/hills_A.obj" id="71_io7y7"]
+[ext_resource type="PackedScene" uid="uid://58l7ugf3vgta" path="res://MUSA/SCENES/My Car/mbg_player.tscn" id="71_v1xvn"]
+[ext_resource type="PackedScene" uid="uid://j3tgy27f6ykl" path="res://MUSA/SCENES/follow_camera.tscn" id="72_mpgk6"]
 [ext_resource type="ArrayMesh" uid="uid://bnmy823pdqcod" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/nature/hills_C_trees.obj" id="72_pg57c"]
 [ext_resource type="ArrayMesh" uid="uid://0vdupg10s2xm" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/crate_long_A.obj" id="73_ce5qu"]
+[ext_resource type="Script" uid="uid://cc6owqmp77yj6" path="res://MUSA/SCENES/control_manager.gd" id="73_jrll0"]
 [ext_resource type="ArrayMesh" uid="uid://dmlniv52jhb3y" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/crate_long_B.obj" id="74_068na"]
+[ext_resource type="Texture2D" uid="uid://d4jmt8jdxtcf0" path="res://AINI/ASSETS/DESIGN_SM.png" id="74_u63af"]
 [ext_resource type="ArrayMesh" uid="uid://hpd6kof3s3eu" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/crate_long_C.obj" id="75_270w1"]
+[ext_resource type="Texture2D" uid="uid://cbelgtynoqq6f" path="res://AINI/ASSETS/DESIGN_ST.png" id="75_v1yc6"]
 [ext_resource type="ArrayMesh" uid="uid://b3xagpy75s0dn" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/resource_lumber.obj" id="76_6b0e4"]
+[ext_resource type="Texture2D" uid="uid://bfuc3b15s5en8" path="res://AINI/ASSETS/DESIGN_T.png" id="76_l37so"]
 [ext_resource type="ArrayMesh" uid="uid://dbv3mb6awwajx" path="res://AFI/ASSETS/Gurun/Assets/obj/decoration/props/tent.obj" id="77_i1my2"]
+[ext_resource type="Texture2D" uid="uid://ce4dxiv04tghj" path="res://AINI/ASSETS/DESIGN_TM.png" id="77_re6st"]
+[ext_resource type="Texture2D" uid="uid://cysmyle6ak0xf" path="res://AINI/ASSETS/DESIGN_YL.png" id="78_err1s"]
 [ext_resource type="ArrayMesh" uid="uid://hp1vbdh5t4yj" path="res://AFI/ASSETS/Gurun/Assets/obj/buildings/blue/building_home_A_blue.obj" id="78_girkv"]
+[ext_resource type="Texture2D" uid="uid://dpjnsa4hi64g2" path="res://AINI/ASSETS/DESIGN_YW(next).png" id="79_6r76r"]
 [ext_resource type="ArrayMesh" uid="uid://ctf666kj0fcgi" path="res://AFI/ASSETS/Gurun/Assets/obj/buildings/blue/building_home_B_blue.obj" id="79_d7s1f"]
+[ext_resource type="Texture2D" uid="uid://cdw3cp78quh4s" path="res://AINI/ASSETS/DESIGN_YL(restart).png" id="79_v1xvn"]
 [ext_resource type="ArrayMesh" uid="uid://bgbxbpevnhjch" path="res://AFI/ASSETS/Gurun/Assets/obj/buildings/blue/building_windmill_blue_building_windmill_top_blue.obj" id="80_8gdgm"]
+[ext_resource type="Texture2D" uid="uid://wy5b1hqkvij1" path="res://AINI/ASSETS/DESIGN_YL(menu).png" id="80_s38wf"]
 [ext_resource type="ArrayMesh" uid="uid://0cb06q3mu668" path="res://AFI/ASSETS/Gurun/Assets/obj/buildings/blue/building_windmill_blue_building_windmill_top_blue_building_windmill_top_fan_blue.obj" id="81_iykv5"]
+[ext_resource type="Texture2D" uid="uid://5cra7t60ypf8" path="res://AINI/ASSETS/DESIGN_YW.png" id="81_oan58"]
+[ext_resource type="Texture2D" uid="uid://dhjv8rnydb88e" path="res://AINI/ASSETS/DESIGN_S(restart).png" id="82_wv17h"]
+[ext_resource type="Script" uid="uid://bjkoga06j1bxu" path="res://MUSA/SCENES/delivery_container.gd" id="83_jeqt0"]
+[ext_resource type="Script" uid="uid://d0m2e4viv1ab0" path="res://MUSA/SCENES/delivery_point.gd" id="84_l83mc"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_yl73a"]
 panorama = ExtResource("1_nwxtb")
@@ -86,22 +96,6 @@ sky_material = SubResource("PanoramaSkyMaterial_yl73a")
 background_mode = 2
 sky = SubResource("Sky_nwxtb")
 tonemap_mode = 2
-
-[sub_resource type="LabelSettings" id="LabelSettings_wkljv"]
-font_size = 38
-
-[sub_resource type="LabelSettings" id="LabelSettings_meyyl"]
-font_size = 55
-
-[sub_resource type="LabelSettings" id="LabelSettings_2h2dd"]
-font_size = 27
-
-[sub_resource type="LabelSettings" id="LabelSettings_hc5yj"]
-font_size = 21
-
-[sub_resource type="LabelSettings" id="LabelSettings_x04ln"]
-font_size = 38
-font_color = Color(0.09411765, 0.4509804, 0.8117647, 1)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p37vq"]
 points = PackedVector3Array(-2.2649152, 2.7761536, -3.159387, -2.3017468, 2.7514713, -3.130087, -2.7826343, 3.4343472, -3.0814185, -2.7701843, 3.4438736, -3.0799289, -0.9913677, 3.531344, -2.9483259, -2.1663516, 2.743244, -3.1484616, -2.1834705, 2.6536083, -3.1191614, -2.2649152, 2.6782906, -3.0799289, -2.813241, 2.2851067, -0.31726098, -2.7883406, 3.4339142, -3.061554, -2.561644, 4.18131, 0.62680364, -2.5460813, 4.1882386, 0.6228306, -2.7655153, 3.4482038, -3.0675135, -0.990849, 3.5434687, -2.9383936, 2.475483, 3.2659016, -1.4828157, -0.69567657, -0.060573436, -0.5114374, 0.48760748, -0.032860026, -0.70561385, -0.13282561, -0.08265755, -0.78209233, -1.9702616, 2.740213, 1.4571433, -2.351029, 3.3442786, 1.4616127, -2.4189858, 3.4356463, 1.3756986, -2.43818, 3.528313, 1.376195, -0.7750461, -0.10041146, 0.110324144, -0.50684905, -0.06403761, 0.6779549, -2.3971982, 3.5677178, 1.424367, -2.3302786, 3.5971634, 1.4094682, 1.3362932, 3.2039795, 1.9105525, 0.7796674, 4.2505937, 0.3338008, 0.78329873, 4.253192, 0.3154261, -0.4726112, 3.8920515, -1.6586174, 2.4734077, 3.2797582, -1.4639444, 2.4863768, 3.2697988, -1.4689106, 2.415307, 2.5756645, -0.7463362, -0.011436462, -0.170128, -0.0163126, 2.3105183, 2.4041877, -0.7076001, 0.7542484, -0.075296186, -0.13996959, -1.9111233, 2.7609978, 1.5033283, -2.2986345, 3.373291, 1.5097847, 0.112027645, -0.093050085, 0.75294375, 1.3409619, 3.1987832, 1.9140291, 0.7983427, 4.2449646, 0.32287526, 2.4785953, 2.759266, -0.70859337, 2.4718513, 2.5942843, -0.66240835, 0.67643476, -0.036324203, 0.48328185, 2.3286748, 2.3734431, -0.60480094, 2.4163446, 2.5739324, -0.5377579)
@@ -1476,155 +1470,42 @@ points = PackedVector3Array(0.2799623, 0.05249804, 0.5598926, -4.3809414e-06, 0.
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tw5p5"]
 points = PackedVector3Array(0.2799623, 0.05249804, 0.5598926, -4.3809414e-06, 0.05249804, 0.5598926, 0.2799623, 0, 0.5598926, 0.41998845, 0.8289428, 0.32588053, -4.3809414e-06, 1.1969302, 0.2624306, -4.3809414e-06, 0, 0.5598926, -0.42008287, 0.8289428, 0.32588053, 0.41998845, 0, 0.24490118, 0.41998845, 1.224996, -0.070090204, 0.436175, 0.07342208, -0.19806555, 0.436175, 0.10499608, -0.19806555, 0.436175, 0.14496475, -0.22806984, 0.19260651, 1.28, -0.32905206, 0.08726573, 1.28, -0.32905206, -0.42008287, 1.224996, -0.070090204, -0.38505492, 0, 0.27995998, -0.438753, 0.14383711, 0.040355742, -0.438753, 0.11226311, 0.040355742, -0.42008287, 0, 0.24490118, 0.41998845, 0, -0.3850816, 0.24493432, 1.265967, -0.48692417, 0.23097456, 1.28, -0.47272858, 0.23097456, 1.28, -0.3673371, 0.436175, 0.14496475, -0.27538845, 0.41998845, 0.8289428, -0.46606094, 0.436175, 0.07342208, -0.30539274, 0.048983365, 1.28, -0.3673371, 0.048983365, 1.28, -0.47272858, 0.03493792, 1.265967, -0.48692417, -0.42008287, 0.8289428, -0.46606094, -0.438753, 0.14383711, -0.06697148, -0.438753, 0.07229444, 0.010351419, -0.42008287, 0, -0.3850816, 0.38496053, 0, -0.42003286, 0.20682323, 1.265967, -0.52510166, 0.19260651, 1.28, -0.5110136, 0.436175, 0.10499608, -0.30539274, 0.25589663, 0.66593575, -0.52510166, 0.25572532, 0.7498825, -0.52510166, 0.25598228, 0, -0.52510166, 0.08726573, 1.28, -0.5110136, 0.07313466, 1.265967, -0.52510166, 0.06474167, 0.58474547, -0.538652, 0.06474167, 0.55317146, -0.538652, 0.08632368, 0.104119025, -0.538652, 0.02397564, 0, -0.52510166, -0.38505492, 0, -0.42003286, -0.438753, 0.11226311, -0.06697148, -0.438753, 0.07229444, -0.03696716, 0.20202726, 0.37187156, -0.538652, 0.14199156, 0.5402662, -0.538652, 0.11201656, 0.58474547, -0.538652, 0.19363427, 0.104119025, -0.538652, 0.20202726, 0.34029755, -0.538652)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxfm3"]
+atlas = ExtResource("77_re6st")
+region = Rect2(252, 285, 402, 353)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpgk6"]
+atlas = ExtResource("79_v1xvn")
+region = Rect2(128, 896, 411, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c16av"]
+atlas = ExtResource("80_s38wf")
+region = Rect2(572, 895, 400, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwk5g"]
+atlas = ExtResource("82_wv17h")
+region = Rect2(400, 876, 283, 119)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ndpu"]
+atlas = ExtResource("79_6r76r")
+region = Rect2(98, 877, 283, 118)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4bt58"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.7137255)
+emission_enabled = true
+emission = Color(1, 0, 0, 1)
+emission_energy_multiplier = 16.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ocpoe"]
+material = SubResource("StandardMaterial3D_4bt58")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_io7y7"]
+
 [node name="level_2" type="Node3D" unique_id=402827693]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1550459060]
 environment = SubResource("Environment_s77qv")
-
-[node name="MOBIL_MBG" parent="." unique_id=780432208 node_paths=PackedStringArray("km_h_label") instance=ExtResource("2_gnohd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -526.97186, 0.42757416, -780.4754)
-km_h_label = NodePath("../UI_UX - CanvasLayer/CANVAS/Speedo-Panel/Speed-Label")
-
-[node name="UI_UX - CanvasLayer" type="CanvasLayer" parent="." unique_id=1307330218]
-
-[node name="CANVAS" type="Control" parent="UI_UX - CanvasLayer" unique_id=9950367]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Timer-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=2135121880]
-layout_mode = 1
-offset_right = 413.99997
-offset_bottom = 230.0
-texture = ExtResource("3_u10ni")
-expand_mode = 1
-
-[node name="Timer-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Timer-Panel" unique_id=1207628076]
-layout_mode = 0
-offset_left = 143.0
-offset_top = 84.0
-offset_right = 284.0
-offset_bottom = 160.0
-text = "00:00"
-label_settings = SubResource("LabelSettings_wkljv")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Speedo-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=294184576]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -414.0
-offset_top = -230.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("4_61e4g")
-expand_mode = 1
-
-[node name="Speed-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Speedo-Panel" unique_id=1701735290]
-layout_mode = 0
-offset_left = 127.0
-offset_top = 74.0
-offset_right = 268.0
-offset_bottom = 150.0
-text = "67"
-label_settings = SubResource("LabelSettings_meyyl")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Meter-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/Speedo-Panel" unique_id=2101005824]
-layout_mode = 0
-offset_left = 127.0
-offset_top = 115.0
-offset_right = 268.0
-offset_bottom = 191.0
-text = "KM/H"
-label_settings = SubResource("LabelSettings_2h2dd")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ScoreTarget-Panel" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS" unique_id=1245917003]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -414.0
-offset_bottom = 230.0
-grow_horizontal = 0
-texture = ExtResource("5_r3wbc")
-expand_mode = 1
-
-[node name="Score-Texture" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=2126556804]
-layout_mode = 0
-offset_left = 70.0
-offset_top = 40.0
-offset_right = 301.0
-offset_bottom = 166.0
-texture = ExtResource("6_woswc")
-expand_mode = 1
-
-[node name="Score-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=903399749]
-layout_mode = 0
-offset_left = 167.0
-offset_top = 59.0
-offset_right = 308.0
-offset_bottom = 112.0
-text = "0"
-label_settings = SubResource("LabelSettings_wkljv")
-vertical_alignment = 1
-
-[node name="ScoreDisplay-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=159015815]
-layout_mode = 0
-offset_left = 167.0
-offset_top = 45.0
-offset_right = 308.0
-offset_bottom = 98.0
-text = "Score"
-label_settings = SubResource("LabelSettings_hc5yj")
-
-[node name="Score-Label2" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=2132767081]
-layout_mode = 0
-offset_left = 98.0
-offset_top = 66.0
-offset_right = 259.0
-offset_bottom = 119.0
-text = "______________"
-label_settings = SubResource("LabelSettings_x04ln")
-vertical_alignment = 1
-
-[node name="Target-Texure" type="TextureRect" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=1905505938]
-layout_mode = 0
-offset_left = 62.0
-offset_top = 97.0
-offset_right = 187.125
-offset_bottom = 188.0
-texture = ExtResource("7_ycyws")
-expand_mode = 1
-
-[node name="TargetDisplay-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=1039654076]
-layout_mode = 0
-offset_left = 167.0
-offset_top = 110.0
-offset_right = 308.0
-offset_bottom = 163.0
-text = "Target"
-label_settings = SubResource("LabelSettings_hc5yj")
-
-[node name="Target-Label" type="Label" parent="UI_UX - CanvasLayer/CANVAS/ScoreTarget-Panel" unique_id=155463165]
-layout_mode = 0
-offset_left = 167.0
-offset_top = 123.0
-offset_right = 308.0
-offset_bottom = 176.0
-text = "0"
-label_settings = SubResource("LabelSettings_wkljv")
-vertical_alignment = 2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=432392033]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 99.558914, 0)
@@ -5936,3 +5817,521 @@ mesh = ExtResource("80_8gdgm")
 [node name="BuildingWindmillBlueBuildingWindmillTopBlueBuildingWindmillTopFanBlue" type="MeshInstance3D" parent="Node3D2/BuildingWindmillBlue7" unique_id=1086430217]
 transform = Transform3D(0.3219352, 0, 0.9467617, 0, 1, 0, -0.9467617, 0, 0.3219352, -0.05595398, 0.11962074, -0.07305908)
 mesh = ExtResource("81_iykv5")
+
+[node name="GameTimer" type="Timer" parent="." unique_id=2000705921 node_paths=PackedStringArray("timer_label")]
+wait_time = 480.0
+one_shot = true
+autostart = true
+script = ExtResource("70_6cga5")
+timer_label = NodePath("../Control Manager/Game-UI/Timer_Panel/DesignT/timer-label")
+
+[node name="MBG-PLAYER" parent="." unique_id=439468542 node_paths=PackedStringArray("km_h_label") instance=ExtResource("71_v1xvn")]
+transform = Transform3D(0.99314606, 0, 0.11687876, 0, 1, 0, -0.11687876, 0, 0.99314606, -523.6436, 0.6089677, -774.8717)
+km_h_label = NodePath("../Control Manager/Game-UI/SpeedT_Panel/DesignSm/speed")
+
+[node name="FollowCamera" parent="." unique_id=2062275161 node_paths=PackedStringArray("follow_target") instance=ExtResource("72_mpgk6")]
+follow_target = NodePath("../MBG-PLAYER")
+camera_height = 0.915
+camera_distance = 4.3469999999999995
+fov_change_speed = 3.6
+
+[node name="Control Manager" type="Control" parent="." unique_id=1591608746 node_paths=PackedStringArray("win_panel", "lose_panel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("73_jrll0")
+win_panel = NodePath("Canvas_win_screen")
+lose_panel = NodePath("Canvas_lose_screen")
+
+[node name="Game-UI" type="Control" parent="Control Manager" unique_id=957121910]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpeedT_Panel" type="TextureRect" parent="Control Manager/Game-UI" unique_id=2120147589]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -407.0
+offset_top = -271.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="DesignSm" type="Sprite2D" parent="Control Manager/Game-UI/SpeedT_Panel" unique_id=1688157832]
+position = Vector2(439, 396)
+scale = Vector2(0.6104167, 0.5957408)
+texture = ExtResource("74_u63af")
+
+[node name="speed" type="Label" parent="Control Manager/Game-UI/SpeedT_Panel/DesignSm" unique_id=1007630694]
+offset_left = -326.00684
+offset_top = -444.82434
+offset_right = -143.00684
+offset_bottom = -334.82434
+theme_override_font_sizes/font_size = 80
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreT_Panel" type="TextureRect" parent="Control Manager/Game-UI" unique_id=327821328]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -270.0
+offset_bottom = 210.0
+grow_horizontal = 0
+
+[node name="DesignSt" type="Sprite2D" parent="Control Manager/Game-UI/ScoreT_Panel" unique_id=1454465293]
+position = Vector2(56.000008, 110.99999)
+scale = Vector2(0.2435185, 0.24)
+texture = ExtResource("75_v1yc6")
+
+[node name="score-counter" type="Label" parent="Control Manager/Game-UI/ScoreT_Panel/DesignSt" unique_id=1307167465]
+offset_left = -59.54342
+offset_top = -162.49995
+offset_right = 145.45657
+offset_bottom = -25.499954
+theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
+theme_override_font_sizes/font_size = 115
+text = "0"
+
+[node name="target-counter" type="Label" parent="Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter" unique_id=1332586290]
+layout_mode = 0
+offset_top = 270.83334
+offset_right = 165.0
+offset_bottom = 380.83334
+theme_override_colors/font_color = Color(0.015686275, 0.16470589, 0.4392157, 1)
+theme_override_font_sizes/font_size = 115
+text = "0 / 10"
+
+[node name="Timer_Panel" type="TextureRect" parent="Control Manager/Game-UI" unique_id=1763572545]
+layout_mode = 1
+offset_right = 428.0
+offset_bottom = 219.0
+
+[node name="DesignT" type="Sprite2D" parent="Control Manager/Game-UI/Timer_Panel" unique_id=1587195135]
+position = Vector2(257.75003, 352.50003)
+scale = Vector2(0.5319444, 0.5711111)
+texture = ExtResource("76_l37so")
+
+[node name="timer-label" type="Label" parent="Control Manager/Game-UI/Timer_Panel/DesignT" unique_id=1329049895]
+offset_left = -213.55951
+offset_top = -502.41492
+offset_right = 33.44049
+offset_bottom = -392.41492
+theme_override_font_sizes/font_size = 80
+text = "00 : 00"
+
+[node name="Restart_Button" type="Button" parent="Control Manager/Game-UI" unique_id=1056152947]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -98.0
+offset_top = 8.999999
+offset_right = 312.0
+offset_bottom = 370.0
+grow_horizontal = 0
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_jxfm3")
+flat = true
+
+[node name="Canvas_lose_screen" type="Control" parent="Control Manager" unique_id=1465092342]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -556.5
+offset_top = -324.0
+offset_right = 556.5
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DesignYl" type="Sprite2D" parent="Control Manager/Canvas_lose_screen" unique_id=505149800]
+position = Vector2(564.5, 449.5)
+scale = Vector2(0.51203704, 0.47185192)
+texture = ExtResource("78_err1s")
+
+[node name="RestartGameButton" type="Button" parent="Control Manager/Canvas_lose_screen" unique_id=679658910]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.5
+offset_top = 76.0
+offset_right = 266.5
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_mpgk6")
+flat = true
+
+[node name="ReturnMenuButton" type="Button" parent="Control Manager/Canvas_lose_screen" unique_id=645773078]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 103.5
+offset_top = 75.5
+offset_right = 522.5
+offset_bottom = 224.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_c16av")
+flat = true
+
+[node name="Canvas_win_screen" type="Control" parent="Control Manager" unique_id=1209563450]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -556.5
+offset_top = -324.0
+offset_right = 556.5
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="YW" type="Sprite2D" parent="Control Manager/Canvas_win_screen" unique_id=718372473]
+position = Vector2(564.5, 449.5)
+scale = Vector2(0.51203704, 0.47185192)
+texture = ExtResource("81_oan58")
+
+[node name="RestartGameButton" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=395243796]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = 76.0
+offset_right = 385.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+icon = SubResource("AtlasTexture_lwk5g")
+flat = true
+
+[node name="Next Lv3 Button" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=1611145569]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = 76.0
+offset_right = 274.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+icon = SubResource("AtlasTexture_2ndpu")
+flat = true
+
+[node name="ReturnMenuButton" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=1566392436]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 103.5
+offset_top = 75.5
+offset_right = 522.5
+offset_bottom = 224.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_c16av")
+flat = true
+
+[node name="DeliveryContainer" type="Node3D" parent="." unique_id=1556301189]
+script = ExtResource("83_jeqt0")
+
+[node name="Point" type="Node3D" parent="DeliveryContainer" unique_id=1919498127 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -806.88434, 0.33189887, -507.44305)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point" unique_id=575324884]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point" unique_id=535731664]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point/Area3D" unique_id=1817465630]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point2" type="Node3D" parent="DeliveryContainer" unique_id=498750820 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1363.6306, 0.33189887, -531.27954)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point2" unique_id=2006555831]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point2" unique_id=1811786467]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point2/Area3D" unique_id=1832311724]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point3" type="Node3D" parent="DeliveryContainer" unique_id=560369935 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1362.5706, 0.33189887, -256.2482)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point3" unique_id=588716419]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point3" unique_id=1720876727]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point3/Area3D" unique_id=1979584825]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point4" type="Node3D" parent="DeliveryContainer" unique_id=153638724 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1820.9017, 0.33189887, -134.37976)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point4" unique_id=431628500]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point4" unique_id=525639908]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point4/Area3D" unique_id=1451803088]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point5" type="Node3D" parent="DeliveryContainer" unique_id=806677160 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -2490.6577, 0.33189887, -592.3166)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point5" unique_id=190366067]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point5" unique_id=1080712112]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point5/Area3D" unique_id=2039843282]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point6" type="Node3D" parent="DeliveryContainer" unique_id=1068676841 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -2589.3877, 0.33189887, -647.3624)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point6" unique_id=1483779359]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point6" unique_id=1143967487]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point6/Area3D" unique_id=2045166003]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point7" type="Node3D" parent="DeliveryContainer" unique_id=1941781354 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -3086.115, 0.33189887, -893.33966)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point7" unique_id=400642464]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point7" unique_id=1439693013]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point7/Area3D" unique_id=55557787]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point8" type="Node3D" parent="DeliveryContainer" unique_id=970467546 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -2739.13, 0.33189887, -1193.8804)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point8" unique_id=573213538]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point8" unique_id=459931203]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point8/Area3D" unique_id=1010447247]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point9" type="Node3D" parent="DeliveryContainer" unique_id=775547757 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -2366.4355, 0.33189887, -1252.3654)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point9" unique_id=123458853]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point9" unique_id=915245251]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point9/Area3D" unique_id=247312924]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point10" type="Node3D" parent="DeliveryContainer" unique_id=1744622095 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1819.674, 0.33189887, -1263.4111)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point10" unique_id=916522782]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point10" unique_id=1712214361]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point10/Area3D" unique_id=106923803]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point11" type="Node3D" parent="DeliveryContainer" unique_id=1466418932 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1616.4269, 0.33189887, -1217.9371)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point11" unique_id=119202419]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point11" unique_id=1917999344]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point11/Area3D" unique_id=68383983]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point12" type="Node3D" parent="DeliveryContainer" unique_id=1872126034 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -1489.9423, 0.33189887, -532.81335)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point12" unique_id=196091015]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point12" unique_id=1014281914]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point12/Area3D" unique_id=2017802882]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point13" type="Node3D" parent="DeliveryContainer" unique_id=2144271020 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -2606.0593, 0.33189887, 54.598663)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point13" unique_id=1803936748]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point13" unique_id=390019433]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point13/Area3D" unique_id=1610484118]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point14" type="Node3D" parent="DeliveryContainer" unique_id=1070471447 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -3057.683, 0.33189887, -539.2978)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point14" unique_id=301097357]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point14" unique_id=1627032627]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point14/Area3D" unique_id=651128648]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[node name="Point15" type="Node3D" parent="DeliveryContainer" unique_id=2112705363 node_paths=PackedStringArray("labelTarget", "labelScore")]
+transform = Transform3D(40, 0, 0, 0, 400, 0, 0, 0, 40, -3307.1433, 0.33189887, -1460.1105)
+script = ExtResource("84_l83mc")
+labelTarget = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter/target-counter")
+labelScore = NodePath("../../Control Manager/Game-UI/ScoreT_Panel/DesignSt/score-counter")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="DeliveryContainer/Point15" unique_id=336437915]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0.899, 0)
+mesh = SubResource("CylinderMesh_ocpoe")
+
+[node name="Area3D" type="Area3D" parent="DeliveryContainer/Point15" unique_id=297188877]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeliveryContainer/Point15/Area3D" unique_id=717614526]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+shape = SubResource("BoxShape3D_io7y7")
+
+[connection signal="timeout" from="GameTimer" to="GameTimer" method="_on_timeout"]
+[connection signal="pressed" from="Control Manager/Game-UI/Restart_Button" to="Control Manager" method="_on_restart_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_lose_screen/RestartGameButton" to="Control Manager" method="_on_restart_game_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_lose_screen/ReturnMenuButton" to="Control Manager" method="_on_return_menu_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/RestartGameButton" to="Control Manager" method="_on_restart_game_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/Next Lv3 Button" to="Control Manager" method="_on_next_lv_3_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/ReturnMenuButton" to="Control Manager" method="_on_return_menu_button_pressed"]
+[connection signal="body_entered" from="DeliveryContainer/Point/Area3D" to="DeliveryContainer/Point" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point2/Area3D" to="DeliveryContainer/Point2" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point3/Area3D" to="DeliveryContainer/Point3" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point4/Area3D" to="DeliveryContainer/Point4" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point5/Area3D" to="DeliveryContainer/Point5" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point6/Area3D" to="DeliveryContainer/Point6" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point7/Area3D" to="DeliveryContainer/Point7" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point8/Area3D" to="DeliveryContainer/Point8" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point9/Area3D" to="DeliveryContainer/Point9" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point10/Area3D" to="DeliveryContainer/Point10" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point11/Area3D" to="DeliveryContainer/Point11" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point12/Area3D" to="DeliveryContainer/Point12" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point13/Area3D" to="DeliveryContainer/Point13" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point14/Area3D" to="DeliveryContainer/Point14" method="_on_body_entered"]
+[connection signal="body_entered" from="DeliveryContainer/Point15/Area3D" to="DeliveryContainer/Point15" method="_on_body_entered"]

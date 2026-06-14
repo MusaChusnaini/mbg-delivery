@@ -272,3 +272,7 @@ func _ui_refresh_set(value: bool) -> void:
 
 #endregion
 # ------------------------------------------------------------------------------
+
+
+func _on_next_lv_3_button_pressed() -> void:
+	pass # Replace with function body.

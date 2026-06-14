@@ -325,16 +325,15 @@ scale = Vector2(1.0215853, 1.1279651)
 texture = ExtResource("15_p5f1k")
 
 [node name="WIN_LOSE_SCREEN - CanvasLayer" type="CanvasLayer" parent="." unique_id=2007691882]
-visible = false
 
 [node name="Canvas_lose_screen" type="Control" parent="WIN_LOSE_SCREEN - CanvasLayer" unique_id=1796689534]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 3.0
 offset_top = 5.0
 offset_right = 1116.0
 offset_bottom = 653.0
-metadata/_edit_lock_ = true
 
 [node name="DesignYl" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_lose_screen" unique_id=1928923658]
 position = Vector2(564.5, 449.5)
@@ -352,12 +351,10 @@ scale = Vector2(1.032552, 1.0141371)
 texture = ExtResource("18_m85cj")
 
 [node name="Canvas_win_screen" type="Control" parent="WIN_LOSE_SCREEN - CanvasLayer" unique_id=479476368]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-metadata/_edit_lock_ = true
 
 [node name="DesignYw" type="Sprite2D" parent="WIN_LOSE_SCREEN - CanvasLayer/Canvas_win_screen" unique_id=1757395555]
 position = Vector2(564, 451.99997)
@@ -380,6 +377,7 @@ scale = Vector2(0.8855172, 0.99273777)
 texture = ExtResource("22_q5gko")
 
 [node name="PANEL_LEVEL - CanvasLayer" type="CanvasLayer" parent="." unique_id=269150589]
+visible = false
 
 [node name="CANVAS" type="Control" parent="PANEL_LEVEL - CanvasLayer" unique_id=1763634877]
 layout_mode = 3

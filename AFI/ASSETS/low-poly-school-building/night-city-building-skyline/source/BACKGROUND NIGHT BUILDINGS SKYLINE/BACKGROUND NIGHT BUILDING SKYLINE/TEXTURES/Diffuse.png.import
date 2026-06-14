@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk2nsprqty4cj"
-path.s3tc="res://.godot/imported/Diffuse.png-d01a697a8fdef12d8688182cef0dc062.s3tc.ctex"
+path.s3tc="res://.godot/imported/Diffuse.png-a871998809d0b74f947999bb4439c282.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://AFI/ASSETS/low-poly-school-building/night-city-building-skyline/source/BACKGROUND NIGHT BUILDINGS SKYLINE/BACKGROUND NIGHT BUILDING SKYLINE/textures/Diffuse.png"
-dest_files=["res://.godot/imported/Diffuse.png-d01a697a8fdef12d8688182cef0dc062.s3tc.ctex"]
+source_file="res://AFI/ASSETS/low-poly-school-building/night-city-building-skyline/source/BACKGROUND NIGHT BUILDINGS SKYLINE/BACKGROUND NIGHT BUILDING SKYLINE/TEXTURES/Diffuse.png"
+dest_files=["res://.godot/imported/Diffuse.png-a871998809d0b74f947999bb4439c282.s3tc.ctex"]
 
 [params]
 

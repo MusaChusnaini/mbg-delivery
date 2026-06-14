@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmr1bcttaplhh"
+path="res://.godot/imported/2music gurun.mp3-05f7229db38c015a93f5edd28d9d178b.mp3str"
+
+[deps]
+
+source_file="res://CustomMusic/2music gurun.mp3"
+dest_files=["res://.godot/imported/2music gurun.mp3-05f7229db38c015a93f5edd28d9d178b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -26,7 +26,7 @@ func update_score_label():
 	labelScore.text = str(GameSystem.get_score())
 
 func _on_body_entered(body: Node3D) -> void:
-	if body.is_in_group("Player") and reached == false:
+	if body.is_in_group("Player") and reached == false and !GameSystem.game_finished:
 		AudioManager.play_sound("checkpoint")
 		reached = true
 		GameSystem.emit_signal("add_counter")

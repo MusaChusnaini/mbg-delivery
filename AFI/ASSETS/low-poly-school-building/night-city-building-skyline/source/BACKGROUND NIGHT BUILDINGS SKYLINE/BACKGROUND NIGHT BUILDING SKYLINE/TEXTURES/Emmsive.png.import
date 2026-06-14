@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8lyn0jpp3fdg"
-path.s3tc="res://.godot/imported/Emmsive.png-562e4dc11a734836a9e3f81492ff7ded.s3tc.ctex"
+path.s3tc="res://.godot/imported/Emmsive.png-b1a10a77b550cd1ffaf220684536e38d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://AFI/ASSETS/low-poly-school-building/night-city-building-skyline/source/BACKGROUND NIGHT BUILDINGS SKYLINE/BACKGROUND NIGHT BUILDING SKYLINE/textures/Emmsive.png"
-dest_files=["res://.godot/imported/Emmsive.png-562e4dc11a734836a9e3f81492ff7ded.s3tc.ctex"]
+source_file="res://AFI/ASSETS/low-poly-school-building/night-city-building-skyline/source/BACKGROUND NIGHT BUILDINGS SKYLINE/BACKGROUND NIGHT BUILDING SKYLINE/TEXTURES/Emmsive.png"
+dest_files=["res://.godot/imported/Emmsive.png-b1a10a77b550cd1ffaf220684536e38d.s3tc.ctex"]
 
 [params]
 

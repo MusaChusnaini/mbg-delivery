@@ -1,12 +1,25 @@
 [gd_scene format=3 uid="uid://c54amok6musu6"]
 
 [ext_resource type="Script" uid="uid://cmnj2seush5v4" path="res://MUSA/SCENES/audio_manager.gd" id="1_prswa"]
+[ext_resource type="AudioStream" uid="uid://squee1tl2skd" path="res://CustomMusic/victory cute.mp3" id="2_duy2g"]
 [ext_resource type="AudioStream" uid="uid://dod4wn30jirv1" path="res://MUSA/SFX/checkpoin cute.mp3" id="2_hcbfi"]
+[ext_resource type="AudioStream" uid="uid://2ydnhwd0dc3v" path="res://CustomMusic/gameover.mp3" id="3_h0vxr"]
 [ext_resource type="AudioStream" uid="uid://d2ixi7cbwu6oh" path="res://MUSA/SFX/whoosh-nitro.mp3" id="3_hcbfi"]
+[ext_resource type="AudioStream" uid="uid://c3lfng1t63bt0" path="res://CustomMusic/tombol klik.wav" id="4_7tgah"]
 [ext_resource type="AudioStream" uid="uid://bw33goq8i1hga" path="res://MUSA/SFX/edited-dragon-studio-simple-whoosh-03-433005.wav" id="4_63f7c"]
 
 [node name="AudioManager" type="Node" unique_id=1170558428]
 script = ExtResource("1_prswa")
+
+[node name="victory" type="AudioStreamPlayer" parent="." unique_id=1054848331]
+stream = ExtResource("2_duy2g")
+
+[node name="gameover" type="AudioStreamPlayer" parent="." unique_id=2055447956]
+stream = ExtResource("3_h0vxr")
+bus = &"SFX"
+
+[node name="button-click" type="AudioStreamPlayer" parent="." unique_id=416757867]
+stream = ExtResource("4_7tgah")
 
 [node name="checkpoint" type="AudioStreamPlayer" parent="." unique_id=1042864070]
 stream = ExtResource("2_hcbfi")

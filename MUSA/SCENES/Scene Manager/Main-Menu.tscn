@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bbokihmlebfuu" path="res://MUSA/SCENES/Scene Manager/ui_parent_script.gd" id="1_yuqb2"]
 [ext_resource type="Texture2D" uid="uid://d4mov3d34h2pp" path="res://AINI/ASSETS/DESIGN_MM.png" id="2_o2q4f"]
+[ext_resource type="Texture2D" uid="uid://d71fs8b1ti01" path="res://AINI/ASSETS/pink-crosses-pink-background_78370-2887.jpg" id="2_ux5rp"]
 [ext_resource type="Texture2D" uid="uid://w6eq3mmpj2vn" path="res://AINI/ASSETS/DESIGN_PLAY.png" id="4_0y1kx"]
 [ext_resource type="Texture2D" uid="uid://dacglm4fh8r80" path="res://AINI/ASSETS/DESIGN_LVL.png" id="5_0y1kx"]
 [ext_resource type="Texture2D" uid="uid://ctngm0f6ytnpb" path="res://AINI/ASSETS/DESIGN_EXIT.png" id="5_gys0l"]
@@ -36,6 +37,14 @@ region = Rect2(418, 84, 245, 92)
 
 [node name="MainMenu" type="CanvasLayer" unique_id=1610560072]
 script = ExtResource("1_yuqb2")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1161865012]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ux5rp")
 
 [node name="Menu" type="Control" parent="." unique_id=193747533]
 layout_mode = 3

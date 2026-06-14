@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://squee1tl2skd"
+path="res://.godot/imported/victory cute.mp3-fab403d32cb314f84364102c739a86e7.mp3str"
+
+[deps]
+
+source_file="res://CustomMusic/victory cute.mp3"
+dest_files=["res://.godot/imported/victory cute.mp3-fab403d32cb314f84364102c739a86e7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

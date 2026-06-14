@@ -1,0 +1,252 @@
+[gd_scene format=3 uid="uid://d310x712ajfun"]
+
+[ext_resource type="Script" uid="uid://bbokihmlebfuu" path="res://MUSA/SCENES/Scene Manager/ui_parent_script.gd" id="1_2wfj5"]
+[ext_resource type="Texture2D" uid="uid://d71fs8b1ti01" path="res://AINI/ASSETS/pink-crosses-pink-background_78370-2887.jpg" id="1_bhewp"]
+[ext_resource type="Texture2D" uid="uid://dk1oxswi8gkex" path="res://AINI/ASSETS/DESIGN_CS.png" id="1_hoklp"]
+[ext_resource type="Texture2D" uid="uid://ctngm0f6ytnpb" path="res://AINI/ASSETS/DESIGN_EXIT.png" id="2_bhewp"]
+[ext_resource type="Texture2D" uid="uid://d4mov3d34h2pp" path="res://AINI/ASSETS/DESIGN_MM.png" id="5_5e1yk"]
+[ext_resource type="Texture2D" uid="uid://w6eq3mmpj2vn" path="res://AINI/ASSETS/DESIGN_PLAY.png" id="6_kats8"]
+[ext_resource type="Texture2D" uid="uid://dacglm4fh8r80" path="res://AINI/ASSETS/DESIGN_LVL.png" id="7_ktxuq"]
+[ext_resource type="Texture2D" uid="uid://q6te26ugg4h5" path="res://AINI/ASSETS/DESIGN_LVL1.png" id="8_c3qqc"]
+[ext_resource type="Texture2D" uid="uid://da6ogpahvfgtg" path="res://AINI/ASSETS/DESIGN_LVL2.png" id="9_744np"]
+[ext_resource type="Texture2D" uid="uid://cf4ly5p8b4pyq" path="res://AINI/ASSETS/DESIGN_LVL3.png" id="10_25sry"]
+[ext_resource type="Texture2D" uid="uid://ddrvto2eo28u3" path="res://AINI/ASSETS/DESIGN_S(back).png" id="11_5afsr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n6ayx"]
+font_size = 40
+font_color = Color(0.06279333, 0.06264626, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbysa"]
+atlas = ExtResource("2_bhewp")
+region = Rect2(269, 578, 535, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4gk1"]
+atlas = ExtResource("6_kats8")
+region = Rect2(125, 583, 825, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lywee"]
+atlas = ExtResource("2_bhewp")
+region = Rect2(269, 578, 535, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63i1j"]
+atlas = ExtResource("8_c3qqc")
+region = Rect2(187, 421, 766, 173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6ct0"]
+atlas = ExtResource("9_744np")
+region = Rect2(187, 616, 767, 169)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gspx"]
+atlas = ExtResource("10_25sry")
+region = Rect2(187, 808, 767, 168)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qf4oy"]
+atlas = ExtResource("11_5afsr")
+region = Rect2(418, 84, 245, 92)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1606039464]
+script = ExtResource("1_2wfj5")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=311945887]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bhewp")
+
+[node name="Control" type="Control" parent="." unique_id=1474840819]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=540813674]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -337.0
+offset_top = -345.00003
+offset_right = 743.0
+offset_bottom = 1005.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("1_hoklp")
+
+[node name="Label" type="Label" parent="Control" unique_id=98932495]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -329.5
+offset_top = 95.0
+offset_right = 329.5
+offset_bottom = 150.0
+grow_horizontal = 2
+text = "THANKS FOR PLAYING OUR GAME!"
+label_settings = SubResource("LabelSettings_n6ayx")
+
+[node name="MainMenuButton" type="Button" parent="." unique_id=901435608]
+offset_left = 20.999998
+offset_top = 552.0
+offset_right = 564.0
+offset_bottom = 747.0
+scale = Vector2(0.4, 0.4)
+icon = SubResource("AtlasTexture_vbysa")
+flat = true
+
+[node name="Menu" type="Control" parent="." unique_id=305399817]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Sprite2D" parent="Menu" unique_id=490823553]
+position = Vector2(571, 321)
+scale = Vector2(0.5953705, 0.5964815)
+texture = ExtResource("5_5e1yk")
+
+[node name="Play_Button" type="Button" parent="Menu" unique_id=1440641865]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -42.0
+offset_right = 653.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_t4gk1")
+flat = true
+
+[node name="Exit_Button" type="Button" parent="Menu" unique_id=1447163688]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = 95.0
+offset_right = 709.0
+offset_bottom = 298.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_lywee")
+flat = true
+
+[node name="Level Selection" type="Control" parent="." unique_id=1827748412]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="Sprite2D" parent="Level Selection" unique_id=877281534]
+position = Vector2(577, 299.00003)
+scale = Vector2(0.58472216, 0.5572222)
+texture = ExtResource("7_ktxuq")
+
+[node name="Level1" type="Button" parent="Level Selection" unique_id=1663238793]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -79.0
+offset_right = 674.0
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_63i1j")
+flat = true
+
+[node name="Level2" type="Button" parent="Level Selection" unique_id=924679114]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = 1.0
+offset_right = 674.0
+offset_bottom = 204.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_w6ct0")
+flat = true
+
+[node name="Level3" type="Button" parent="Level Selection" unique_id=1178530945]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = 80.0
+offset_right = 674.0
+offset_bottom = 283.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_8gspx")
+flat = true
+
+[node name="BackButton" type="Button" parent="Level Selection" unique_id=1057467725]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = 166.0
+offset_right = 300.80005
+offset_bottom = 287.8
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 4
+icon = SubResource("AtlasTexture_qf4oy")
+flat = true
+
+[connection signal="pressed" from="MainMenuButton" to="." method="_back_to_main_menu"]

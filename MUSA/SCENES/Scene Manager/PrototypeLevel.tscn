@@ -10,9 +10,14 @@
 [ext_resource type="Texture2D" uid="uid://d4jmt8jdxtcf0" path="res://AINI/ASSETS/DESIGN_SM.png" id="6_ggroq"]
 [ext_resource type="Texture2D" uid="uid://cbelgtynoqq6f" path="res://AINI/ASSETS/DESIGN_ST.png" id="7_3cb7w"]
 [ext_resource type="Texture2D" uid="uid://bfuc3b15s5en8" path="res://AINI/ASSETS/DESIGN_T.png" id="8_fmycd"]
+[ext_resource type="Texture2D" uid="uid://cysmyle6ak0xf" path="res://AINI/ASSETS/DESIGN_YL.png" id="8_pah8y"]
 [ext_resource type="ArrayMesh" uid="uid://8xyge1ib8qxt" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_1.obj" id="9_l7d6k"]
 [ext_resource type="ArrayMesh" uid="uid://bgfn5eyfs7qfa" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_4.obj" id="10_6mlfs"]
+[ext_resource type="Texture2D" uid="uid://wy5b1hqkvij1" path="res://AINI/ASSETS/DESIGN_YL(menu).png" id="10_bxqay"]
+[ext_resource type="Texture2D" uid="uid://5cra7t60ypf8" path="res://AINI/ASSETS/DESIGN_YW.png" id="11_hp5pj"]
+[ext_resource type="Texture2D" uid="uid://dpjnsa4hi64g2" path="res://AINI/ASSETS/DESIGN_YW(next).png" id="12_c6qb5"]
 [ext_resource type="PackedScene" uid="uid://bqfa2of3c34sa" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_1_Winter.fbx" id="12_u0lx4"]
+[ext_resource type="Texture2D" uid="uid://dhjv8rnydb88e" path="res://AINI/ASSETS/DESIGN_S(restart).png" id="13_0um26"]
 [ext_resource type="PackedScene" uid="uid://dvus5k5o7g2am" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Winter.fbx" id="13_kgy31"]
 [ext_resource type="PackedScene" uid="uid://bbcnfjxmn6wvo" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/FBX/Clouds/Clouds_1.fbx" id="14_1h8rj"]
 [ext_resource type="PackedScene" uid="uid://bieh6ewiqtedg" path="res://AFI/ASSETS/Nature Pack Low Poly By RgsDev/FBX/Clouds/Clouds_2.fbx" id="15_mvkkt"]
@@ -36,7 +41,19 @@
 [ext_resource type="PackedScene" uid="uid://dt7ij5m66lq7" path="res://MUSA/SCENES/My Car/bus_npc.tscn" id="30_yx622"]
 [ext_resource type="Script" uid="uid://difs1qg4mpcpw" path="res://addons/road-generator/nodes/road_point.gd" id="31_tcbjh"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4bt58"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jktg6"]
+atlas = ExtResource("12_c6qb5")
+region = Rect2(98, 877, 283, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flb53"]
+atlas = ExtResource("10_bxqay")
+region = Rect2(572, 895, 400, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loxes"]
+atlas = ExtResource("13_0um26")
+region = Rect2(400, 876, 283, 119)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_loxes"]
 transparency = 1
 albedo_color = Color(1, 1, 1, 0.7137255)
 emission_enabled = true
@@ -44,7 +61,7 @@ emission = Color(1, 0, 0, 1)
 emission_energy_multiplier = 16.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_547ye"]
-material = SubResource("StandardMaterial3D_4bt58")
+material = SubResource("StandardMaterial3D_loxes")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ggroq"]
 
@@ -97,7 +114,7 @@ directional_shadow_max_distance = 263.2
 sky_mode = 1
 
 [node name="GameTimer" type="Timer" parent="." unique_id=1232834414 node_paths=PackedStringArray("timer_label")]
-wait_time = 300.0
+wait_time = 2.0
 one_shot = true
 autostart = true
 script = ExtResource("3_lqmfl")
@@ -113,7 +130,7 @@ camera_height = 0.915
 camera_distance = 4.3469999999999995
 fov_change_speed = 3.6
 
-[node name="Control Manager" type="Control" parent="." unique_id=1387447760]
+[node name="Control Manager" type="Control" parent="." unique_id=1387447760 node_paths=PackedStringArray("win_panel", "lose_panel")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -121,6 +138,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_83flx")
+win_panel = NodePath("Canvas_win_screen")
+lose_panel = NodePath("Canvas_lose_screen")
 
 [node name="Game-UI" type="Control" parent="Control Manager" unique_id=1844048063]
 layout_mode = 1
@@ -206,6 +225,131 @@ offset_right = 33.44049
 offset_bottom = -392.41492
 theme_override_font_sizes/font_size = 80
 text = "00 : 00"
+
+[node name="Canvas_lose_screen" type="Control" parent="Control Manager" unique_id=1610904563]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -556.5
+offset_top = -324.0
+offset_right = 556.5
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DesignYl" type="Sprite2D" parent="Control Manager/Canvas_lose_screen" unique_id=234983090]
+position = Vector2(564.5, 449.5)
+scale = Vector2(0.51203704, 0.47185192)
+texture = ExtResource("8_pah8y")
+
+[node name="RestartGameButton" type="Button" parent="Control Manager/Canvas_lose_screen" unique_id=697368126]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.5
+offset_top = 76.0
+offset_right = 266.5
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_jktg6")
+flat = true
+
+[node name="ReturnMenuButton" type="Button" parent="Control Manager/Canvas_lose_screen" unique_id=1067280486]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 103.5
+offset_top = 75.5
+offset_right = 522.5
+offset_bottom = 224.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_flb53")
+flat = true
+
+[node name="Canvas_win_screen" type="Control" parent="Control Manager" unique_id=1017697738]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -556.5
+offset_top = -324.0
+offset_right = 556.5
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="YW" type="Sprite2D" parent="Control Manager/Canvas_win_screen" unique_id=2103738727]
+position = Vector2(564.5, 449.5)
+scale = Vector2(0.51203704, 0.47185192)
+texture = ExtResource("11_hp5pj")
+
+[node name="RestartGameButton" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=220990037]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = 76.0
+offset_right = 385.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+icon = SubResource("AtlasTexture_loxes")
+flat = true
+
+[node name="Next Lv2 Button" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=2047894334]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.0
+offset_top = 76.0
+offset_right = 274.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+icon = SubResource("AtlasTexture_jktg6")
+flat = true
+
+[node name="ReturnMenuButton" type="Button" parent="Control Manager/Canvas_win_screen" unique_id=771077668]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 103.5
+offset_top = 75.5
+offset_right = 522.5
+offset_bottom = 224.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+icon = SubResource("AtlasTexture_flb53")
+flat = true
 
 [node name="DeliveryContainer" type="Node3D" parent="." unique_id=1815819319]
 script = ExtResource("3_v3cwp")
@@ -768,6 +912,11 @@ material_override = SubResource("StandardMaterial3D_a72hw")
 mesh = ExtResource("26_wvmcy")
 
 [connection signal="timeout" from="GameTimer" to="GameTimer" method="_on_timeout"]
+[connection signal="pressed" from="Control Manager/Canvas_lose_screen/RestartGameButton" to="Control Manager" method="_on_restart_game_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_lose_screen/ReturnMenuButton" to="Control Manager" method="_on_return_menu_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/RestartGameButton" to="Control Manager" method="_on_restart_game_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/Next Lv2 Button" to="Control Manager" method="_on_next_lv_2_button_pressed"]
+[connection signal="pressed" from="Control Manager/Canvas_win_screen/ReturnMenuButton" to="Control Manager" method="_on_return_menu_button_pressed"]
 [connection signal="body_entered" from="DeliveryContainer/Point/Area3D" to="DeliveryContainer/Point" method="_on_body_entered"]
 [connection signal="body_entered" from="DeliveryContainer/Point2/Area3D" to="DeliveryContainer/Point2" method="_on_body_entered"]
 [connection signal="body_entered" from="DeliveryContainer/Point3/Area3D" to="DeliveryContainer/Point3" method="_on_body_entered"]

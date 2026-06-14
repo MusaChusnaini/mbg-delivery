@@ -19,4 +19,7 @@ func _process(delta: float) -> void:
 func _on_timeout() -> void:
 	if !GameSystem.game_finished:
 		print("Timeout, You Lose..")
+		AudioManager.play_sound("gameover")
+		GameSystem.emit_signal("lose_panel_activate")
+		GameSystem.game_finished = true
 	pass # Replace with function body.

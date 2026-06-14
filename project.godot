@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="MBG_Delivery"
+config/version="1.0"
 run/main_scene="uid://beih1n8ru5ahr"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
+config/icon="uid://fo15v6rp637w"
 
 [autoload]
 
@@ -21,6 +23,10 @@ GameSystem="*uid://cpso842yfacfx"
 AudioManager="*uid://c54amok6musu6"
 MusicPlayer="*uid://bodiiptlqbxnn"
 SceneManager="*uid://dibb1s4mvh1px"
+
+[display]
+
+window/size/mode=4
 
 [editor_plugins]
 

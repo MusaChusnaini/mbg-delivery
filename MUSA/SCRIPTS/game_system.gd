@@ -4,6 +4,8 @@ extends Node3D
 # Melakukan Manipulasi
 signal add_counter
 
+signal win_panel_activate
+signal lose_panel_activate
 
 func _ready() -> void:
 	add_counter.connect(on_add_counter)
@@ -26,11 +28,30 @@ func get_max_target() -> int:
 func set_max_target(target):
 	targetMBG = target
 
+signal enable_all_point
+
+
+func reset_counter():
+	MBG_dihantar = 0
+
+func reset_score():
+	score = 0
+
+func _input(event: InputEvent) -> void:
+	if Input.is_key_pressed(KEY_F1) :
+		AudioManager.play_sound("victory")
+		emit_signal("win_panel_activate")
+	if Input.is_key_pressed(KEY_F2):
+		AudioManager.play_sound("gameover")
+		emit_signal("lose_panel_activate")
+
+
 func on_add_counter() -> void:
 	if MBG_dihantar < targetMBG:
 		MBG_dihantar += 1
 		score += 20
 		if MBG_dihantar >= targetMBG:
 			game_finished = true
-			print("Win !")
+			emit_signal("win_panel_activate")
+			AudioManager.play_sound("victory")
 	pass
